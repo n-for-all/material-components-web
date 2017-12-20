@@ -29,7 +29,7 @@ $mdc-dialog-dark-theme-bg-color: #303030 !default;
 
 // postcss-bem-linter: define dialog
 
-.mdc-dialog {
+.dialog {
   display: flex;
   position: fixed;
   top: 0;
@@ -41,7 +41,7 @@ $mdc-dialog-dark-theme-bg-color: #303030 !default;
   visibility: hidden;
   z-index: 5;
 
-  &__backdrop {
+  .backdrop {
     @include mdc-theme-prop(background-color, text-primary-on-light);
 
     position: fixed;
@@ -55,7 +55,7 @@ $mdc-dialog-dark-theme-bg-color: #303030 !default;
     z-index: -1;
   }
 
-  &__surface {
+  .surface {
     @include mdc-elevation(24);
     @include mdc-theme-prop(background-color, background);
 
@@ -68,32 +68,32 @@ $mdc-dialog-dark-theme-bg-color: #303030 !default;
     border-radius: 2px;
     opacity: 0;
 
-    @include mdc-theme-dark(".mdc-dialog") {
+    @include mdc-theme-dark("dialog") {
       @include mdc-theme-prop(color, text-primary-on-dark);
 
       background-color: $mdc-dialog-dark-theme-bg-color;
       background-color: var(--mdc-dialog-dark-theme-bg-color, #{$mdc-dialog-dark-theme-bg-color});
     }
 
-    @include mdc-rtl(".mdc-dialog") {
+    @include mdc-rtl("dialog") {
       text-align: right;
     }
   }
 
-  &__header {
+  .header {
     display: flex;
     align-items: center;
     padding: 24px 24px 0;
 
-    &__empty {
+    .empty {
       padding: 0;
     }
 
-    @include mdc-rtl(".mdc-dialog") {
+    @include mdc-rtl("dialog") {
       text-align: right;
     }
 
-    &__title {
+    .title {
       @include mdc-typography(title);
 
       flex: 1;
@@ -101,14 +101,14 @@ $mdc-dialog-dark-theme-bg-color: #303030 !default;
     }
   }
 
-  &__body {
+  .body {
     @include mdc-theme-prop(color, text-secondary-on-light);
     @include mdc-typography(body1);
 
     margin-top: 20px;
     padding: 0 24px 24px;
 
-    @include mdc-theme-dark(".mdc-dialog") {
+    @include mdc-theme-dark("dialog") {
       @include mdc-theme-prop(color, text-secondary-on-dark);
     }
 
@@ -122,14 +122,14 @@ $mdc-dialog-dark-theme-bg-color: #303030 !default;
     }
   }
 
-  &__footer {
+  .footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
     padding: 8px;
 
-    &__button {
+    .button {
       @include mdc-rtl-reflexive-box(margin, right, 8px);
 
       &:last-child {
@@ -138,7 +138,7 @@ $mdc-dialog-dark-theme-bg-color: #303030 !default;
     }
   }
 
-  &__action {
+  .action {
     @include mdc-theme-prop(color, secondary);
   }
 
@@ -146,39 +146,39 @@ $mdc-dialog-dark-theme-bg-color: #303030 !default;
   @media (max-width: 640px) {
     min-width: 280px;
 
-    &__surface {
+    .surface {
       min-width: 280px;
     }
 
-    &__body {
+    .body {
       line-height: 24px;
     }
   }
 
-  &--animating {
+  &.animating {
     visibility: visible;
 
-    .mdc-dialog__backdrop {
+    .backdrop {
       transition: mdc-animation-enter(opacity, 120ms);
     }
 
-    .mdc-dialog--open .mdc-dialog__surface {
+    .open .surface {
       transition: mdc-animation-enter(opacity, 120ms), mdc-animation-enter(transform, 120ms);
     }
 
-    .mdc-dialog__surface {
+    .surface {
       transition: mdc-animation-enter(opacity, 120ms), mdc-animation-enter(transform, 120ms);
     }
   }
 
-  &--open {
+  &.open {
     visibility: visible;
 
-    .mdc-dialog__backdrop {
+    .backdrop {
       opacity: .3;
     }
 
-    .mdc-dialog__surface {
+    .surface {
       transform: translateY(0) scale(1);
       opacity: 1;
     }
@@ -187,6 +187,6 @@ $mdc-dialog-dark-theme-bg-color: #303030 !default;
 
 // postcss-bem-linter: end
 
-.mdc-dialog-scroll-lock {
+dialog-scroll-lock {
   overflow: hidden;
 }

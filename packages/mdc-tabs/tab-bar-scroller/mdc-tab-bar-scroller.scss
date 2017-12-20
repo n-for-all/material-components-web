@@ -21,7 +21,7 @@
 $mdc-tab-bar-scroller-indicator-width: 48px;
 
 // postcss-bem-linter: define tab-bar-scroller
-.mdc-tab-bar-scroller {
+.tab-bar-scroller {
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -29,20 +29,20 @@ $mdc-tab-bar-scroller-indicator-width: 48px;
   background-color: inherit;
   overflow: hidden;
 
-  &__scroll-frame {
+  .scroll-frame {
     display: flex;
     position: relative;
     flex: 1;
     justify-content: flex-start;
     overflow: hidden;
 
-    &__tabs {
+    .tabs {
       transition: mdc-animation-enter(transform, 240ms);
       will-change: transform;
     }
   }
 
-  &__indicator {
+  >.indicator {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,19 +52,19 @@ $mdc-tab-bar-scroller-indicator-width: 48px;
 
     @include mdc-theme-prop(color, text-secondary-on-light);
 
-    @include mdc-theme-dark(".mdc-tab-bar") {
+    @include mdc-theme-dark(".tab-bar") {
       @include mdc-theme-prop(color, text-secondary-on-dark);
     }
 
     &:hover {
       @include mdc-theme-prop(color, text-primary-on-light);
 
-      @include mdc-theme-dark(".mdc-tab-bar") {
+      @include mdc-theme-dark(".tab-bar") {
         @include mdc-theme-prop(color, text-primary-on-dark);
       }
     }
 
-    &__inner {
+    .inner {
       color: inherit;
       text-decoration: inherit;
       cursor: inherit;
@@ -73,21 +73,21 @@ $mdc-tab-bar-scroller-indicator-width: 48px;
         outline-color: inherit;
       }
 
-      @include mdc-rtl(".mdc-tab-bar-scroller") {
+      @include mdc-rtl(".tab-bar-scroller") {
         transform: rotate(180deg);
       }
     }
 
-    &__inner:hover {
+    .inner:hover {
       color: inherit;
 
-      @include mdc-theme-dark(".mdc-tab-bar") {
+      @include mdc-theme-dark(".tab-bar") {
         @include mdc-theme-prop(color, text-secondary-on-dark);
       }
     }
   }
 
-  &__indicator--enabled {
+  .indicator--enabled {
     visibility: visible;
   }
 }

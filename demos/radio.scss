@@ -20,7 +20,7 @@
 @import "../packages/mdc-ripple/mixins";
 @import "../packages/mdc-theme/color-palette";
 
-.mdc-radio.demo-radio--custom {
+.mdc-radio.demo-custom {
   $color: $material-color-red-500;
 
   @include mdc-radio-unchecked-stroke-color($color);

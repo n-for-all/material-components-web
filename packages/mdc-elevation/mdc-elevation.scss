@@ -15,13 +15,14 @@
 //
 
 @import "./mixins";
+.elevation{
+    @for $z-value from 0 through 24 {
+      &.z#{$z-value} {
+        @include mdc-elevation($z-value);
+      }
+    }
 
-@for $z-value from 0 through 24 {
-  .mdc-elevation--z#{$z-value} {
-    @include mdc-elevation($z-value);
-  }
-}
-
-.mdc-elevation-transition {
-  @include mdc-elevation-transition;
+    .transition {
+      @include mdc-elevation-transition;
+    }
 }

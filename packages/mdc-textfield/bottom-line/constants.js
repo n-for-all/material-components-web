@@ -22,7 +22,7 @@ const strings = {
 
 /** @enum {string} */
 const cssClasses = {
-  BOTTOM_LINE_ACTIVE: 'mdc-text-field__bottom-line--active',
+  BOTTOM_LINE_ACTIVE: 'active',
 };
 
 export {strings, cssClasses};

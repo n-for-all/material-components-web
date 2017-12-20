@@ -24,21 +24,21 @@ a.material-icons {
   text-decoration: none;
 }
 
-.mdc-list,
-.mdc-list-group {
+.list,
+.list-group {
   max-width: 600px;
 }
 
-.mdc-theme--dark {
+.theme--dark {
   background: #303030;
 }
 
-.mdc-theme--dark > h3 {
+.theme--dark > h3 {
   color: white;
 }
 
-.demo-list--icon-placeholders,
-.demo-list--with-avatars {
+.demo-icon-placeholders,
+.demo-with-avatars {
   @include mdc-list-item-graphic-ink-color(white);
   @include mdc-list-item-graphic-fill-color(text-icon-on-background);
 
@@ -48,7 +48,7 @@ a.material-icons {
   }
 }
 
-.demo-list--avatar-and-meta-icon {
+.demo-avatar-and-meta-icon {
   @include mdc-list-item-meta-ink-color($material-color-pink-a200);
 
   @include mdc-theme-dark {
@@ -57,11 +57,11 @@ a.material-icons {
 }
 
 .demo-list-group--custom,
-.demo-list--custom {
+.demo-custom {
   @include mdc-list-divider-color($material-color-pink-50);
 }
 
-.demo-list--custom {
+.demo-custom {
   @include mdc-list-item-primary-text-ink-color($material-color-blue-600);
   @include mdc-list-item-secondary-text-ink-color($material-color-purple-600);
   @include mdc-list-item-graphic-fill-color($material-color-pink-400);
@@ -83,13 +83,13 @@ a.material-icons {
   padding: 24px;
 }
 
-#demo-wrapper .mdc-list, #demo-wrapper .mdc-list-group {
+#demo-wrapper .list, #demo-wrapper .list-group {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#demo-wrapper .mdc-list-group .mdc-list,
-#demo-wrapper .mdc-theme--dark .mdc-list,
-#demo-wrapper .mdc-theme--dark .mdc-list-group {
+#demo-wrapper .list-group .list,
+#demo-wrapper .theme--dark .list,
+#demo-wrapper .theme--dark .list-group {
   border: none;
 }
 
@@ -103,7 +103,7 @@ a.material-icons {
   margin-bottom: 0.8em;
 }
 
-.hero .mdc-list {
+.hero .list {
   @include mdc-elevation(4);
 
   background-color: white;

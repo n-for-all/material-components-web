@@ -13,168 +13,150 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-
 @import "@material/animation/functions";
 @import "@material/typography/mixins";
 @import "@material/theme/mixins";
 @import "@material/ripple/common";
 @import "@material/ripple/mixins";
 @import "@material/rtl/mixins";
-
 $mdc-tab-with-text-height: 48px;
 $mdc-tab-with-icon-and-text-height: 72px;
-
 @mixin mdc-tabs-icon-tab-content {
-  display: block;
-  margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
-
 // postcss-bem-linter: define tab
-.mdc-tab {
-  @include mdc-typography(body2);
-
-  display: table-cell;
-  position: relative;
-  box-sizing: border-box;
-  min-width: 160px;
-  min-height: $mdc-tab-with-text-height;
-  padding: 0 24px;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-  cursor: pointer;
-  overflow: hidden;
-  vertical-align: middle;
-
-  @include mdc-theme-prop(color, text-secondary-on-light);
-
-  &:hover {
-    @include mdc-theme-prop(color, text-primary-on-light);
-  }
-
-  &:focus {
-    @include mdc-theme-prop(outline-color, text-secondary-on-light);
-  }
-
-  @include mdc-theme-dark(".mdc-tab-bar") {
-    @include mdc-theme-prop(color, text-secondary-on-dark);
+.tab {
+    @include mdc-typography(body2);
+    display: table-cell;
+    position: relative;
+    box-sizing: border-box;
+    min-width: 160px;
+    min-height: $mdc-tab-with-text-height;
+    padding: 0 24px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    vertical-align: middle;
+    @include mdc-theme-prop(color, text-secondary-on-light);
 
     &:hover {
-      @include mdc-theme-prop(color, text-primary-on-dark);
+        @include mdc-theme-prop(color, text-primary-on-light);
     }
 
     &:focus {
-      @include mdc-theme-prop(outline-color, text-secondary-on-dark);
+        @include mdc-theme-prop(outline-color, text-secondary-on-light);
     }
-  }
+    @include mdc-theme-dark(".tab-bar") {
+        @include mdc-theme-prop(color, text-secondary-on-dark);
 
-  // TODO: Replace with breakpoint variable
-  @media screen and (max-width: 600px) {
-    min-width: 72px;
-    padding: 0 12px;
-  }
+        &:hover {
+            @include mdc-theme-prop(color, text-primary-on-dark);
+        }
 
-  &__icon {
-    @include mdc-tabs-icon-tab-content;
+        &:focus {
+            @include mdc-theme-prop(outline-color, text-secondary-on-dark);
+        }
+    }
+    // TODO: Replace with breakpoint variable
+    @media screen and (max-width: 600px) {
+        min-width: 72px;
+        padding: 0 12px;
+    }
 
-    width: 24px;
-    height: 24px;
+    .icon {
+        @include mdc-tabs-icon-tab-content;
+        width: 24px;
+        height: 24px;
+        // postcss-bem-linter: ignore
+        .icons-with-text & {
+            margin-top: 4px;
+        }
+    }
 
+    .icon-text {
+        @include mdc-tabs-icon-tab-content;
+    }
     // postcss-bem-linter: ignore
-    .mdc-tab-bar--icons-with-text & {
-      margin-top: 4px;
-    }
-  }
-
-  &__icon-text {
-    @include mdc-tabs-icon-tab-content;
-  }
-
-  // postcss-bem-linter: ignore
-  &__icon + &__icon-text {
-    padding-top: 6px;
-  }
-}
-
-.mdc-tab--active {
-  @include mdc-theme-prop(color, text-primary-on-light);
-
-  @include mdc-theme-dark(".mdc-tab-bar") {
-    @include mdc-theme-prop(color, text-primary-on-dark);
-  }
-
-  &::before {
-    bottom: 0;
-  }
-}
-
-// stylelint-disable plugin/selector-bem-pattern
-.mdc-tab-bar:not(.mdc-tab-bar-upgraded) .mdc-tab {
-  position: relative;
-
-  &::after {
-    display: none;
-    position: absolute;
-    top: $mdc-tab-with-text-height - 2px;
-    left: 0;
-    width: calc(100% - 4px);
-    height: 2px;
-    content: "";
-    pointer-events: none;
-
-    @include mdc-theme-prop(background-color, text-primary-on-light);
-
-    @include mdc-theme-dark(".mdc-tab-bar", true) {
-      @include mdc-theme-prop(background-color, text-primary-on-dark);
+    .icon + .icon-text {
+        padding-top: 6px;
     }
 
-    .mdc-toolbar & {
-      @include mdc-theme-prop(background-color, text-primary-on-primary);
+    &.active {
+        @include mdc-theme-prop(color, text-primary-on-light);
+        @include mdc-theme-dark(".tab-bar") {
+            @include mdc-theme-prop(color, text-primary-on-dark);
+        }
+
+        &::before {
+            bottom: 0;
+        }
     }
-  }
+    // stylelint-disable plugin/selector-bem-pattern
+    .tab-bar:not(.tab-bar-upgraded) & {
+        position: relative;
 
-  &--active,
-  &:active,
-  &:hover {
-    &::after {
-      display: block;
+        &::after {
+            display: none;
+            position: absolute;
+            top: $mdc-tab-with-text-height - 2px;
+            left: 0;
+            width: calc(100% - 4px);
+            height: 2px;
+            content: "";
+            pointer-events: none;
+            @include mdc-theme-prop(background-color, text-primary-on-light);
+            @include mdc-theme-dark(".tab-bar", true) {
+                @include mdc-theme-prop(background-color, text-primary-on-dark);
+            }
+
+            .toolbar & {
+                @include mdc-theme-prop(background-color, text-primary-on-primary);
+            }
+        }
+
+        &.active,
+        &:active,
+        &:hover {
+            &::after {
+                display: block;
+            }
+        }
+
+        &:not(.active):hover::after {
+            opacity: 0.38;
+        }
+
+        &.active,
+        &:not(.active):active::after {
+            opacity: 0.87;
+        }
     }
-  }
+    // stylelint-enable plugin/selector-bem-pattern
+    // stylelint-disable plugin/selector-bem-pattern
+    .icons-with-text:not(.tab-bar-upgraded) &::after {
+        top: $mdc-tab-with-icon-and-text-height - 2px;
+    }
+    // stylelint-enable plugin/selector-bem-pattern
 
-  &:not(.mdc-tab--active):hover::after {
-    opacity: .38;
-  }
+    &.mdc-ripple-upgraded {
+        @include mdc-ripple-surface;
+        @include mdc-states;
+        @include mdc-ripple-radius;
+        @include mdc-theme-dark(".tab-bar") {
+            @include mdc-states(text-primary-on-dark);
+        }
 
-  &--active,
-  &:not(.mdc-tab--active):active::after {
-    opacity: .87;
-  }
-}
-// stylelint-enable plugin/selector-bem-pattern
-
-// stylelint-disable plugin/selector-bem-pattern
-.mdc-tab-bar--icons-with-text:not(.mdc-tab-bar-upgraded) .mdc-tab::after {
-  top: $mdc-tab-with-icon-and-text-height - 2px;
-}
-// stylelint-enable plugin/selector-bem-pattern
-
-.mdc-tab.mdc-ripple-upgraded {
-  @include mdc-ripple-surface;
-  @include mdc-states;
-  @include mdc-ripple-radius;
-
-  @include mdc-theme-dark(".mdc-tab-bar") {
-    @include mdc-states(text-primary-on-dark);
-  }
-
-  .mdc-toolbar & {
-    @include mdc-states(text-primary-on-primary);
-  }
-
-  // stylelint-disable plugin/selector-bem-pattern
-  &:focus {
-    outline: none;
-  }
-  // stylelint-enable plugin/selector-bem-pattern
+        .toolbar & {
+            @include mdc-states(text-primary-on-primary);
+        }
+        // stylelint-disable plugin/selector-bem-pattern
+        &:focus {
+            outline: none;
+        }
+        // stylelint-enable plugin/selector-bem-pattern
+    }
 }
 // postcss-bem-linter: end

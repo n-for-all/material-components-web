@@ -25,58 +25,58 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
-  <body class="mdc-typography">
-    <header class="mdc-toolbar mdc-toolbar--fixed">
-      <div class="mdc-toolbar__row">
-        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+  <body class="typography">
+    <header class="toolbar fixed">
+      <div class="row">
+        <section class="section align-start">
           <span class="catalog-back">
-            <a href="/" class="mdc-toolbar__menu-icon"><i class="material-icons">&#xE5C4;</i></a>
+            <a href="/" class="menu-icon"><i class="material-icons">&#xE5C4;</i></a>
           </span>
-          <span class="mdc-toolbar__title catalog-title">List</span>
+          <span class="title catalog-title">List</span>
         </section>
       </div>
     </header>
     <main>
-      <div class="mdc-toolbar-fixed-adjust"></div>
+      <div class="toolbar-fixed-adjust"></div>
       <section class="hero">
-        <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list demo-list demo-list--with-avatars">
-          <li class="mdc-list-item">
-            <span class="mdc-list-item__graphic" role="presentation">
+        <ul class="list two-line avatar-list demo-list demo-with-avatars">
+          <li class="list-item">
+            <span class="graphic" role="presentation">
               <i class="material-icons" aria-hidden="true">folder</i>
             </span>
-            <span class="mdc-list-item__text">
+            <span class="text">
               Photos
-              <span class="mdc-list-item__secondary-text">Jan 9, 2014</span>
+              <span class="secondary-text">Jan 9, 2014</span>
             </span>
-            <a href="#" class="mdc-list-item__meta material-icons"
+            <a href="#" class="meta material-icons"
                aria-label="View more information" title="More info"
                onclick="event.preventDefault();">
               info
             </a>
           </li>
-          <li class="mdc-list-item">
-            <span class="mdc-list-item__graphic" role="presentation">
+          <li class="list-item">
+            <span class="graphic" role="presentation">
               <i class="material-icons" aria-hidden="true">folder</i>
             </span>
-            <span class="mdc-list-item__text">
+            <span class="text">
               Recipes
-              <span class="mdc-list-item__secondary-text">Jan 17, 2014</span>
+              <span class="secondary-text">Jan 17, 2014</span>
             </span>
-            <a href="#" class="mdc-list-item__meta material-icons"
+            <a href="#" class="meta material-icons"
                aria-label="View more information" title="More info"
                onclick="event.preventDefault();">
               info
             </a>
           </li>
-          <li class="mdc-list-item">
-            <span class="mdc-list-item__graphic" role="presentation">
+          <li class="list-item">
+            <span class="graphic" role="presentation">
               <i class="material-icons" aria-hidden="true">folder</i>
             </span>
-            <span class="mdc-list-item__text">
+            <span class="text">
               Work
-              <span class="mdc-list-item__secondary-text">Jan 28, 2014</span>
+              <span class="secondary-text">Jan 28, 2014</span>
             </span>
-            <a href="#" class="mdc-list-item__meta material-icons"
+            <a href="#" class="meta material-icons"
                aria-label="View more information" title="More info"
                onclick="event.preventDefault();">
               info
@@ -85,27 +85,27 @@
         </ul>
       </section>
 
-      <section class="preamble mdc-typography--body1">
+      <section class="preamble typography--body1">
         <aside>
           <p>
           <em>NOTE:</em> For the purposes of this demo, we've set a max-width of 600px on all
-          <code>mdc-list</code> elements, and surrounded them by a 1px border. This is
+          <code>list</code> elements, and surrounded them by a 1px border. This is
           not included in the base css, which has the list
           take up as much width as possible (since it's a block element).
           </p>
         </aside>
-        <div class="mdc-form-field">
-          <div class="mdc-checkbox">
+        <div class="form-field">
+          <div class="checkbox">
             <input type="checkbox"
-                   class="mdc-checkbox__native-control"
+                   class="native-control"
                    id="toggle-rtl"
                    aria-labelledby="toggle-rtl-label" />
-            <div class="mdc-checkbox__background">
-              <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
-                <path class="mdc-checkbox__checkmark__path" fill="none" stroke="white"
+            <div class="background">
+              <svg class="checkmark" viewBox="0 0 24 24">
+                <path class="path" fill="none" stroke="white"
                       d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
               </svg>
-              <div class="mdc-checkbox__mixedmark"></div>
+              <div class="mixedmark"></div>
             </div>
           </div>
           <label for="toggle-rtl" id="toggle-rtl-label">Toggle RTL</label>
@@ -117,78 +117,78 @@
           <h2>Custom Colors</h2>
           <section>
             <h3>Example - Two-Line Lists, Avatars, Metadata, Inset Dividers</h3>
-            <div class="mdc-list-group demo-list-group--custom">
-              <h3 class="mdc-list-group__subheader">Folders</h3>
-              <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list demo-list demo-list--with-avatars demo-list--custom demo-list--icon-placeholders">
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__graphic" role="presentation">
+            <div class="list-group demo-list-group--custom">
+              <h3 class="list-group__subheader">Folders</h3>
+              <ul class="list two-line avatar-list demo-list demo-with-avatars demo-custom demo-icon-placeholders">
+                <li class="list-item">
+                  <span class="graphic" role="presentation">
                     <i class="material-icons" aria-hidden="true">folder</i>
                   </span>
-                  <span class="mdc-list-item__text">
+                  <span class="text">
                     Photos
-                    <span class="mdc-list-item__secondary-text">Jan 9, 2014</span>
+                    <span class="secondary-text">Jan 9, 2014</span>
                   </span>
-                  <a href="#" class="mdc-list-item__meta material-icons"
+                  <a href="#" class="meta material-icons"
                      aria-label="View more information" title="More info"
                      onclick="event.preventDefault();">
                     info
                   </a>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__graphic" role="presentation">
+                <li class="list-item">
+                  <span class="graphic" role="presentation">
                     <i class="material-icons" aria-hidden="true">folder</i>
                   </span>
-                  <span class="mdc-list-item__text">
+                  <span class="text">
                     Recipes
-                    <span class="mdc-list-item__secondary-text">Jan 17, 2014</span>
+                    <span class="secondary-text">Jan 17, 2014</span>
                   </span>
-                  <a href="#" class="mdc-list-item__meta material-icons"
+                  <a href="#" class="meta material-icons"
                      aria-label="View more information" title="More info"
                      onclick="event.preventDefault();">
                     info
                   </a>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__graphic" role="presentation">
+                <li class="list-item">
+                  <span class="graphic" role="presentation">
                     <i class="material-icons" aria-hidden="true">folder</i>
                   </span>
-                  <span class="mdc-list-item__text">
+                  <span class="text">
                     Work
-                    <span class="mdc-list-item__secondary-text">Jan 28, 2014</span>
+                    <span class="secondary-text">Jan 28, 2014</span>
                   </span>
-                  <a href="#" class="mdc-list-item__meta material-icons"
+                  <a href="#" class="meta material-icons"
                      aria-label="View more information" title="More info"
                      onclick="event.preventDefault();">
                     info
                   </a>
                 </li>
               </ul>
-              <hr class="mdc-list-divider mdc-list-divider--inset">
-              <h3 class="mdc-list-group__subheader">Files</h3>
-              <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list demo-list demo-list--with-avatars demo-list--custom demo-list--icon-placeholders">
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__graphic" role="presentation">
+              <hr class="list-divider inset">
+              <h3 class="list-group__subheader">Files</h3>
+              <ul class="list two-line avatar-list demo-list demo-with-avatars demo-custom demo-icon-placeholders">
+                <li class="list-item">
+                  <span class="graphic" role="presentation">
                     <i class="material-icons" aria-hidden="true">insert_drive_file</i>
                   </span>
-                  <span class="mdc-list-item__text">
+                  <span class="text">
                     Vacation Itinerary
-                    <span class="mdc-list-item__secondary-text">Jan 10, 2014</span>
+                    <span class="secondary-text">Jan 10, 2014</span>
                   </span>
-                  <a href="#" class="mdc-list-item__meta material-icons"
+                  <a href="#" class="meta material-icons"
                      aria-label="View more information" title="More info"
                      onclick="event.preventDefault();">
                     info
                   </a>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__graphic" role="presentation">
+                <li class="list-item">
+                  <span class="graphic" role="presentation">
                     <i class="material-icons" aria-hidden="true">insert_drive_file</i>
                   </span>
-                  <span class="mdc-list-item__text">
+                  <span class="text">
                     Kitchen Remodel
-                    <span class="mdc-list-item__secondary-text">Jan 20, 2014</span>
+                    <span class="secondary-text">Jan 20, 2014</span>
                   </span>
-                  <a href="#" class="mdc-list-item__meta material-icons"
+                  <a href="#" class="meta material-icons"
                      aria-label="View more information" title="More info"
                      onclick="event.preventDefault();">
                     info
@@ -202,103 +202,103 @@
           <h2>Single-Line List</h2>
           <section>
             <h3>Text only, non-interactive (no states)</h3>
-            <ul class="mdc-list mdc-list--non-interactive demo-list">
-              <li class="mdc-list-item">Single-line item</li>
-              <li class="mdc-list-item">Single-line item</li>
-              <li class="mdc-list-item">Single-line item</li>
+            <ul class="list non-interactive demo-list">
+              <li class="list-item">Single-line item</li>
+              <li class="list-item">Single-line item</li>
+              <li class="list-item">Single-line item</li>
             </ul>
           </section>
           <section>
             <h3>Text only (dense)</h3>
-            <ul class="mdc-list mdc-list--dense demo-list">
-              <li class="mdc-list-item">Single-line item</li>
-              <li class="mdc-list-item">Single-line item</li>
-              <li class="mdc-list-item">Single-line item</li>
+            <ul class="list dense demo-list">
+              <li class="list-item">Single-line item</li>
+              <li class="list-item">Single-line item</li>
+              <li class="list-item">Single-line item</li>
             </ul>
           </section>
-          <section class="mdc-theme--dark">
+          <section class="theme--dark">
             <h3>Text Only (dark)</h3>
-            <ul class="mdc-list demo-list">
-              <li class="mdc-list-item">Single-line item</li>
-              <li class="mdc-list-item">Single-line item</li>
-              <li class="mdc-list-item">Single-line item</li>
+            <ul class="list demo-list">
+              <li class="list-item">Single-line item</li>
+              <li class="list-item">Single-line item</li>
+              <li class="list-item">Single-line item</li>
             </ul>
           </section>
           <section>
             <h3>Graphic</h3>
             <aside><p><em>Note: The grey background is styled using demo placeholder styles</em></p></aside>
-            <ul class="mdc-list demo-list demo-list--icon-placeholders">
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+            <ul class="list demo-list demo-icon-placeholders">
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item
               </li>
             </ul>
           </section>
           <section>
             <h3>Graphic (dense)</h3>
-            <ul class="mdc-list mdc-list--dense demo-list demo-list--icon-placeholders">
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+            <ul class="list dense demo-list demo-icon-placeholders">
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item
               </li>
             </ul>
           </section>
           <section>
             <h3>Graphic Example - Icon with Text</h3>
-            <ul class="mdc-list demo-list">
-              <li class="mdc-list-item">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+            <ul class="list demo-list">
+              <li class="list-item">
+                <i class="material-icons graphic" aria-hidden="true">
                   network_wifi
                 </i>
                 Wi-Fi
               </li>
-              <li class="mdc-list-item">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+              <li class="list-item">
+                <i class="material-icons graphic" aria-hidden="true">
                   bluetooth
                 </i>
                 Bluetooth
               </li>
-              <li class="mdc-list-item">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+              <li class="list-item">
+                <i class="material-icons graphic" aria-hidden="true">
                   data_usage
                 </i>
                 Data Usage
               </li>
             </ul>
           </section>
-          <section class="mdc-theme--dark">
+          <section class="theme--dark">
             <h3>Graphic Example - Icon with Text (Dark)</h3>
-            <ul class="mdc-list demo-list">
-              <li class="mdc-list-item">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+            <ul class="list demo-list">
+              <li class="list-item">
+                <i class="material-icons graphic" aria-hidden="true">
                   network_wifi
                 </i>
                 Wi-Fi
               </li>
-              <li class="mdc-list-item">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+              <li class="list-item">
+                <i class="material-icons graphic" aria-hidden="true">
                   bluetooth
                 </i>
                 Bluetooth
               </li>
-              <li class="mdc-list-item">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+              <li class="list-item">
+                <i class="material-icons graphic" aria-hidden="true">
                   data_usage
                 </i>
                 Data Usage
@@ -307,78 +307,78 @@
           </section>
           <section>
             <h3>Avatar List</h3>
-            <ul class="mdc-list mdc-list--avatar-list demo-list demo-list--with-avatars demo-list--icon-placeholders">
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+            <ul class="list avatar-list demo-list demo-with-avatars demo-icon-placeholders">
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item
               </li>
             </ul>
           </section>
           <section>
             <h3>Avatar List (dense)</h3>
-            <ul class="mdc-list mdc-list--dense mdc-list--avatar-list demo-list demo-list--with-avatars demo-list--icon-placeholders">
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+            <ul class="list dense avatar-list demo-list demo-with-avatars demo-icon-placeholders">
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item
               </li>
             </ul>
           </section>
           <section>
             <h3>Example - Avatar with Text</h3>
-            <ul class="mdc-list mdc-list--avatar-list demo-list demo-list--with-avatars">
-              <li class="mdc-list-item">
-                <img class="mdc-list-item__graphic"
+            <ul class="list avatar-list demo-list demo-with-avatars">
+              <li class="list-item">
+                <img class="graphic"
                      src="/images/animal1.svg"
                      width="56" height="56" alt="Panda">
                 Panda
               </li>
-              <li class="mdc-list-item">
-                <img class="mdc-list-item__graphic"
+              <li class="list-item">
+                <img class="graphic"
                      src="/images/animal2.svg"
                      width="56" height="56" alt="Sloth">
                 Sloth
               </li>
-              <li class="mdc-list-item">
-                <img class="mdc-list-item__graphic"
+              <li class="list-item">
+                <img class="graphic"
                      src="/images/animal3.svg"
                      width="56" height="56" alt="Brown Bear">
                 Brown Bear
               </li>
             </ul>
           </section>
-          <section class="mdc-theme--dark">
+          <section class="theme--dark">
             <h3>Example - Avatar with Text (Dark)</h3>
-            <ul class="mdc-list mdc-list--avatar-list demo-list demo-list--with-avatars">
-              <li class="mdc-list-item">
-                <img class="mdc-list-item__graphic"
+            <ul class="list avatar-list demo-list demo-with-avatars">
+              <li class="list-item">
+                <img class="graphic"
                      src="/images/animal1.svg"
                      width="56" height="56" alt="Panda">
                 Panda
               </li>
-              <li class="mdc-list-item">
-                <img class="mdc-list-item__graphic"
+              <li class="list-item">
+                <img class="graphic"
                      src="/images/animal2.svg"
                      width="56" height="56" alt="Sloth">
                 Sloth
               </li>
-              <li class="mdc-list-item">
-                <img class="mdc-list-item__graphic"
+              <li class="list-item">
+                <img class="graphic"
                      src="/images/animal3.svg"
                      width="56" height="56" alt="Brown Bear">
                 Brown Bear
@@ -387,109 +387,109 @@
           </section>
           <section>
             <h3>Metadata</h3>
-            <ul class="mdc-list demo-list">
-              <li class="mdc-list-item">
+            <ul class="list demo-list">
+              <li class="list-item">
                 Single-line item
-                <span class="mdc-list-item__meta">$10.00</span>
+                <span class="meta">$10.00</span>
               </li>
-              <li class="mdc-list-item">
+              <li class="list-item">
                 Single-line item
-                <span class="mdc-list-item__meta">$20.00</span>
+                <span class="meta">$20.00</span>
               </li>
-              <li class="mdc-list-item">
+              <li class="list-item">
                 Single-line item
-                <span class="mdc-list-item__meta">$30.00</span>
+                <span class="meta">$30.00</span>
               </li>
             </ul>
           </section>
           <section>
             <h3>Metadata (Dense)</h3>
-            <ul class="mdc-list mdc-list--dense demo-list">
-              <li class="mdc-list-item">
+            <ul class="list dense demo-list">
+              <li class="list-item">
                 Single-line item
-                <span class="mdc-list-item__meta">$10.00</span>
+                <span class="meta">$10.00</span>
               </li>
-              <li class="mdc-list-item">
+              <li class="list-item">
                 Single-line item
-                <span class="mdc-list-item__meta">$20.00</span>
+                <span class="meta">$20.00</span>
               </li>
-              <li class="mdc-list-item">
+              <li class="list-item">
                 Single-line item
-                <span class="mdc-list-item__meta">$30.00</span>
+                <span class="meta">$30.00</span>
               </li>
             </ul>
           </section>
           <section>
             <h3>Avatar + Metadata</h3>
-            <ul class="mdc-list mdc-list--avatar-list demo-list demo-list--with-avatars demo-list--icon-placeholders">
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+            <ul class="list avatar-list demo-list demo-with-avatars demo-icon-placeholders">
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item
-                <span class="mdc-list-item__meta">$10.00</span>
+                <span class="meta">$10.00</span>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item
-                <span class="mdc-list-item__meta">$20.00</span>
+                <span class="meta">$20.00</span>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item
-                <span class="mdc-list-item__meta">$30.00</span>
+                <span class="meta">$30.00</span>
               </li>
             </ul>
           </section>
           <section>
             <h3>Avatar + Metadata (Dense)</h3>
-            <ul class="mdc-list mdc-list--dense mdc-list--avatar-list demo-list demo-list--with-avatars demo-list--icon-placeholders">
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+            <ul class="list dense avatar-list demo-list demo-with-avatars demo-icon-placeholders">
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item
-                <span class="mdc-list-item__meta">$10.00</span>
+                <span class="meta">$10.00</span>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item
-                <span class="mdc-list-item__meta">$20.00</span>
+                <span class="meta">$20.00</span>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item
-                <span class="mdc-list-item__meta">$30.00</span>
+                <span class="meta">$30.00</span>
               </li>
             </ul>
           </section>
           <section>
             <h3>Example - Avatar with Text and Icon</h3>
-            <ul class="mdc-list mdc-list--avatar-list demo-list demo-list--with-avatars demo-list--avatar-and-meta-icon">
-              <li class="mdc-list-item">
-                <img class="mdc-list-item__graphic"
+            <ul class="list avatar-list demo-list demo-with-avatars demo-avatar-and-meta-icon">
+              <li class="list-item">
+                <img class="graphic"
                      src="/images/animal3.svg"
                      width="56" height="56" alt="Brown Bear">
                 Brown Bear
-                <a class="mdc-list-item__meta material-icons" href="#"
+                <a class="meta material-icons" href="#"
                    aria-label="Remove from favorites" title="Remove from favorites"
                    onclick="event.preventDefault();">
                   favorite
                 </a>
               </li>
-              <li class="mdc-list-item">
-                <img class="mdc-list-item__graphic"
+              <li class="list-item">
+                <img class="graphic"
                      src="/images/animal1.svg"
                      width="56" height="56" alt="Panda">
                 Panda
-                <a class="mdc-list-item__meta material-icons" href="#"
+                <a class="meta material-icons" href="#"
                    aria-label="Add to favorites" title="Add to favorites"
                    onclick="event.preventDefault();">
                   favorite_border
                 </a>
               </li>
-              <li class="mdc-list-item">
-                <img class="mdc-list-item__graphic"
+              <li class="list-item">
+                <img class="graphic"
                      src="/images/animal2.svg"
                      width="56" height="56" alt="Sloth">
                 Sloth
-                <a class="mdc-list-item__meta material-icons" href="#"
+                <a class="meta material-icons" href="#"
                    aria-label="Add to favorites" title="Add to favorites"
                    onclick="event.preventDefault();">
                   favorite_border
@@ -497,37 +497,37 @@
               </li>
             </ul>
           </section>
-          <section class="mdc-theme--dark">
+          <section class="theme--dark">
             <h3>Example - Avatar with Text and Icon (Dark)</h3>
-            <ul class="mdc-list mdc-list--avatar-list demo-list demo-list--with-avatars demo-list--avatar-and-meta-icon">
-              <li class="mdc-list-item">
-                <img class="mdc-list-item__graphic"
+            <ul class="list avatar-list demo-list demo-with-avatars demo-avatar-and-meta-icon">
+              <li class="list-item">
+                <img class="graphic"
                      src="/images/animal3.svg"
                      width="56" height="56" alt="Brown Bear">
                 Brown Bear
-                <a class="mdc-list-item__meta material-icons" href="#"
+                <a class="meta material-icons" href="#"
                    aria-label="Remove from favorites" title="Remove from favorites"
                    onclick="event.preventDefault();">
                   favorite
                 </a>
               </li>
-              <li class="mdc-list-item">
-                <img class="mdc-list-item__graphic"
+              <li class="list-item">
+                <img class="graphic"
                      src="/images/animal1.svg"
                      width="56" height="56" alt="Panda">
                 Panda
-                <a class="mdc-list-item__meta material-icons" href="#"
+                <a class="meta material-icons" href="#"
                    aria-label="Add to favorites" title="Add to favorites"
                    onclick="event.preventDefault();">
                   favorite_border
                 </a>
               </li>
-              <li class="mdc-list-item">
-                <img class="mdc-list-item__graphic"
+              <li class="list-item">
+                <img class="graphic"
                      src="/images/animal2.svg"
                      width="56" height="56" alt="Sloth">
                 Sloth
-                <a class="mdc-list-item__meta material-icons" href="#"
+                <a class="meta material-icons" href="#"
                    aria-label="Add to favorites" title="Add to favorites"
                    onclick="event.preventDefault();">
                   favorite_border
@@ -540,246 +540,246 @@
           <h2>Two-Line List</h2>
           <section>
             <h3>Text-Only</h3>
-            <ul class="mdc-list mdc-list--two-line demo-list">
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__text">
+            <ul class="list two-line demo-list">
+              <li class="list-item">
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__text">
+              <li class="list-item">
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__text">
+              <li class="list-item">
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
               </li>
             </ul>
           </section>
           <section>
             <h3>Text-Only (Dense)</h3>
-            <ul class="mdc-list mdc-list--two-line mdc-list--dense demo-list">
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__text">
+            <ul class="list two-line dense demo-list">
+              <li class="list-item">
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__text">
+              <li class="list-item">
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__text">
+              <li class="list-item">
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
               </li>
             </ul>
           </section>
           <section>
             <h3>Graphic</h3>
-            <ul class="mdc-list mdc-list--two-line demo-list  demo-list--icon-placeholders">
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
-                <span class="mdc-list-item__text">
+            <ul class="list two-line demo-list  demo-icon-placeholders">
+              <li class="list-item">
+                <span class="graphic"></span>
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
-                <span class="mdc-list-item__text">
+              <li class="list-item">
+                <span class="graphic"></span>
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
-                <span class="mdc-list-item__text">
+              <li class="list-item">
+                <span class="graphic"></span>
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
               </li>
             </ul>
           </section>
           <section>
             <h3>Graphic (Dense)</h3>
-            <ul class="mdc-list mdc-list--two-line mdc-list--dense demo-list demo-list--icon-placeholders">
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
-                <span class="mdc-list-item__text">
+            <ul class="list two-line dense demo-list demo-icon-placeholders">
+              <li class="list-item">
+                <span class="graphic"></span>
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
-                <span class="mdc-list-item__text">
+              <li class="list-item">
+                <span class="graphic"></span>
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
-                <span class="mdc-list-item__text">
+              <li class="list-item">
+                <span class="graphic"></span>
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
               </li>
             </ul>
           </section>
           <section>
             <h3>Avatar List</h3>
-            <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list demo-list demo-list--with-avatars demo-list--icon-placeholders">
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
-                <span class="mdc-list-item__text">
+            <ul class="list two-line avatar-list demo-list demo-with-avatars demo-icon-placeholders">
+              <li class="list-item">
+                <span class="graphic"></span>
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
-                <span class="mdc-list-item__text">
+              <li class="list-item">
+                <span class="graphic"></span>
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
-                <span class="mdc-list-item__text">
+              <li class="list-item">
+                <span class="graphic"></span>
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
               </li>
             </ul>
           </section>
           <section>
             <h3>Avatar List (dense)</h3>
-            <ul class="mdc-list mdc-list--two-line mdc-list--dense mdc-list--avatar-list demo-list demo-list--with-avatars demo-list--icon-placeholders">
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
-                <span class="mdc-list-item__text">
+            <ul class="list two-line dense avatar-list demo-list demo-with-avatars demo-icon-placeholders">
+              <li class="list-item">
+                <span class="graphic"></span>
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
-                <span class="mdc-list-item__text">
+              <li class="list-item">
+                <span class="graphic"></span>
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
-                <span class="mdc-list-item__text">
+              <li class="list-item">
+                <span class="graphic"></span>
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
               </li>
             </ul>
           </section>
           <section>
             <h3>Metadata</h3>
-            <ul class="mdc-list mdc-list--two-line demo-list">
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__text">
+            <ul class="list two-line demo-list">
+              <li class="list-item">
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
-                <span class="mdc-list-item__meta">$10.00</span>
+                <span class="meta">$10.00</span>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__text">
+              <li class="list-item">
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
-                <span class="mdc-list-item__meta">$20.00</span>
+                <span class="meta">$20.00</span>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__text">
+              <li class="list-item">
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
-                <span class="mdc-list-item__meta">$30.00</span>
+                <span class="meta">$30.00</span>
               </li>
             </ul>
           </section>
           <section>
             <h3>Metadata (Dense)</h3>
-            <ul class="mdc-list mdc-list--two-line mdc-list--dense demo-list">
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__text">
+            <ul class="list two-line dense demo-list">
+              <li class="list-item">
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
-                <span class="mdc-list-item__meta">$10.00</span>
+                <span class="meta">$10.00</span>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__text">
+              <li class="list-item">
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
-                <span class="mdc-list-item__meta">$20.00</span>
+                <span class="meta">$20.00</span>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__text">
+              <li class="list-item">
+                <span class="text">
                   Two-line item
-                  <span class="mdc-list-item__secondary-text">Secondary text</span>
+                  <span class="secondary-text">Secondary text</span>
                 </span>
-                <span class="mdc-list-item__meta">$30.00</span>
+                <span class="meta">$30.00</span>
               </li>
             </ul>
           </section>
           <section>
             <h3>Example - Two-line Avatar + Text + Icon</h3>
-            <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list demo-list demo-list--with-avatars demo-list--icon-placeholders">
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic" role="presentation">
+            <ul class="list two-line avatar-list demo-list demo-with-avatars demo-icon-placeholders">
+              <li class="list-item">
+                <span class="graphic" role="presentation">
                   <i class="material-icons" aria-hidden="true">folder</i>
                 </span>
-                <span class="mdc-list-item__text">
+                <span class="text">
                   Photos
-                  <span class="mdc-list-item__secondary-text">Jan 9, 2014</span>
+                  <span class="secondary-text">Jan 9, 2014</span>
                 </span>
-                <a href="#" class="mdc-list-item__meta material-icons"
+                <a href="#" class="meta material-icons"
                    aria-label="View more information" title="More info"
                    onclick="event.preventDefault();">
                   info
                 </a>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic" role="presentation">
+              <li class="list-item">
+                <span class="graphic" role="presentation">
                   <i class="material-icons" aria-hidden="true">folder</i>
                 </span>
-                <span class="mdc-list-item__text">
+                <span class="text">
                   Recipes
-                  <span class="mdc-list-item__secondary-text">Jan 17, 2014</span>
+                  <span class="secondary-text">Jan 17, 2014</span>
                 </span>
-                <a href="#" class="mdc-list-item__meta material-icons"
+                <a href="#" class="meta material-icons"
                    aria-label="View more information" title="More info"
                    onclick="event.preventDefault();">
                   info
                 </a>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic" role="presentation">
+              <li class="list-item">
+                <span class="graphic" role="presentation">
                   <i class="material-icons" aria-hidden="true">folder</i>
                 </span>
-                <span class="mdc-list-item__text">
+                <span class="text">
                   Work
-                  <span class="mdc-list-item__secondary-text">Jan 28, 2014</span>
+                  <span class="secondary-text">Jan 28, 2014</span>
                 </span>
-                <a href="#" class="mdc-list-item__meta material-icons"
+                <a href="#" class="meta material-icons"
                    aria-label="View more information" title="More info"
                    onclick="event.preventDefault();">
                   info
@@ -787,46 +787,46 @@
               </li>
             </ul>
           </section>
-          <section class="mdc-theme--dark">
+          <section class="theme--dark">
             <h3>Example - Two-line Avatar + Text + Icon (Dark)</h3>
-            <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list demo-list demo-list--with-avatars demo-list--icon-placeholders">
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic" role="presentation">
+            <ul class="list two-line avatar-list demo-list demo-with-avatars demo-icon-placeholders">
+              <li class="list-item">
+                <span class="graphic" role="presentation">
                   <i class="material-icons" aria-hidden="true">folder</i>
                 </span>
-                <span class="mdc-list-item__text">
+                <span class="text">
                   Photos
-                  <span class="mdc-list-item__secondary-text">Jan 9, 2014</span>
+                  <span class="secondary-text">Jan 9, 2014</span>
                 </span>
-                <a href="#" class="mdc-list-item__meta material-icons"
+                <a href="#" class="meta material-icons"
                    aria-label="View more information" title="More info"
                    onclick="event.preventDefault();">
                   info
                 </a>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic" role="presentation">
+              <li class="list-item">
+                <span class="graphic" role="presentation">
                   <i class="material-icons" aria-hidden="true">folder</i>
                 </span>
-                <span class="mdc-list-item__text">
+                <span class="text">
                   Recipes
-                  <span class="mdc-list-item__secondary-text">Jan 17, 2014</span>
+                  <span class="secondary-text">Jan 17, 2014</span>
                 </span>
-                <a href="#" class="mdc-list-item__meta material-icons"
+                <a href="#" class="meta material-icons"
                    aria-label="View more information" title="More info"
                    onclick="event.preventDefault();">
                   info
                 </a>
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic" role="presentation">
+              <li class="list-item">
+                <span class="graphic" role="presentation">
                   <i class="material-icons" aria-hidden="true">folder</i>
                 </span>
-                <span class="mdc-list-item__text">
+                <span class="text">
                   Work
-                  <span class="mdc-list-item__secondary-text">Jan 28, 2014</span>
+                  <span class="secondary-text">Jan 28, 2014</span>
                 </span>
-                <a href="#" class="mdc-list-item__meta material-icons"
+                <a href="#" class="meta material-icons"
                    aria-label="View more information" title="More info"
                    onclick="event.preventDefault();">
                   info
@@ -839,37 +839,37 @@
           <h2>List Dividers</h2>
           <section>
             <h3>Full-Width Dividers</h3>
-            <ul class="mdc-list demo-list">
-              <li class="mdc-list-item">Single-line item - section 1</li>
-              <li class="mdc-list-item">Single-line item - section 1</li>
-              <li class="mdc-list-item">Single-line item - section 1</li>
-              <li class="mdc-list-divider" role="separator"></li>
-              <li class="mdc-list-item">Single-line item - section 2</li>
-              <li class="mdc-list-item">Single-line item - section 2</li>
+            <ul class="list demo-list">
+              <li class="list-item">Single-line item - section 1</li>
+              <li class="list-item">Single-line item - section 1</li>
+              <li class="list-item">Single-line item - section 1</li>
+              <li class="list-divider" role="separator"></li>
+              <li class="list-item">Single-line item - section 2</li>
+              <li class="list-item">Single-line item - section 2</li>
             </ul>
           </section>
           <section>
             <h3>Inset Dividers</h3>
-            <ul class="mdc-list mdc-list--avatar-list demo-list demo-list--with-avatars demo-list demo-list--icon-placeholders">
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+            <ul class="list avatar-list demo-list demo-with-avatars demo-list demo-icon-placeholders">
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item - section 1
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item - section 1
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item - section 1
               </li>
-              <li class="mdc-list-divider mdc-list-divider--inset" role="separator"></li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+              <li class="list-divider inset" role="separator"></li>
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item - section 2
               </li>
-              <li class="mdc-list-item">
-                <span class="mdc-list-item__graphic"></span>
+              <li class="list-item">
+                <span class="graphic"></span>
                 Single-line item - section 2
               </li>
             </ul>
@@ -879,96 +879,96 @@
           <h2>List Groups</h2>
           <section>
             <h3>Basic Usage</h3>
-            <div class="mdc-list-group">
-              <h3 class="mdc-list-group__subheader">List 1</h3>
-              <ul class="mdc-list demo-list">
-                <li class="mdc-list-item">Single-line item</li>
-                <li class="mdc-list-item">Single-line item</li>
-                <li class="mdc-list-item">Single-line item</li>
+            <div class="list-group">
+              <h3 class="list-group__subheader">List 1</h3>
+              <ul class="list demo-list">
+                <li class="list-item">Single-line item</li>
+                <li class="list-item">Single-line item</li>
+                <li class="list-item">Single-line item</li>
               </ul>
-              <hr class="mdc-list-divider">
-              <h3 class="mdc-list-group__subheader">List 2</h3>
-              <ul class="mdc-list demo-list">
-                <li class="mdc-list-item">Single-line item</li>
-                <li class="mdc-list-item">Single-line item</li>
-                <li class="mdc-list-item">Single-line item</li>
+              <hr class="list-divider">
+              <h3 class="list-group__subheader">List 2</h3>
+              <ul class="list demo-list">
+                <li class="list-item">Single-line item</li>
+                <li class="list-item">Single-line item</li>
+                <li class="list-item">Single-line item</li>
               </ul>
             </div>
           </section>
           <section>
             <h3>Example - Two-Line Lists, Avatars, Metadata, Inset Dividers</h3>
-            <div class="mdc-list-group">
-              <h3 class="mdc-list-group__subheader">Folders</h3>
-              <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list demo-list demo-list--with-avatars demo-list--icon-placeholders">
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__graphic" role="presentation">
+            <div class="list-group">
+              <h3 class="list-group__subheader">Folders</h3>
+              <ul class="list two-line avatar-list demo-list demo-with-avatars demo-icon-placeholders">
+                <li class="list-item">
+                  <span class="graphic" role="presentation">
                     <i class="material-icons" aria-hidden="true">folder</i>
                   </span>
-                  <span class="mdc-list-item__text">
+                  <span class="text">
                     Photos
-                    <span class="mdc-list-item__secondary-text">Jan 9, 2014</span>
+                    <span class="secondary-text">Jan 9, 2014</span>
                   </span>
-                  <a href="#" class="mdc-list-item__meta material-icons"
+                  <a href="#" class="meta material-icons"
                      aria-label="View more information" title="More info"
                      onclick="event.preventDefault();">
                     info
                   </a>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__graphic" role="presentation">
+                <li class="list-item">
+                  <span class="graphic" role="presentation">
                     <i class="material-icons" aria-hidden="true">folder</i>
                   </span>
-                  <span class="mdc-list-item__text">
+                  <span class="text">
                     Recipes
-                    <span class="mdc-list-item__secondary-text">Jan 17, 2014</span>
+                    <span class="secondary-text">Jan 17, 2014</span>
                   </span>
-                  <a href="#" class="mdc-list-item__meta material-icons"
+                  <a href="#" class="meta material-icons"
                      aria-label="View more information" title="More info"
                      onclick="event.preventDefault();">
                     info
                   </a>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__graphic" role="presentation">
+                <li class="list-item">
+                  <span class="graphic" role="presentation">
                     <i class="material-icons" aria-hidden="true">folder</i>
                   </span>
-                  <span class="mdc-list-item__text">
+                  <span class="text">
                     Work
-                    <span class="mdc-list-item__secondary-text">Jan 28, 2014</span>
+                    <span class="secondary-text">Jan 28, 2014</span>
                   </span>
-                  <a href="#" class="mdc-list-item__meta material-icons"
+                  <a href="#" class="meta material-icons"
                      aria-label="View more information" title="More info"
                      onclick="event.preventDefault();">
                     info
                   </a>
                 </li>
               </ul>
-              <hr class="mdc-list-divider mdc-list-divider--inset">
-              <h3 class="mdc-list-group__subheader">Files</h3>
-              <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list demo-list demo-list--with-avatars demo-list--icon-placeholders">
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__graphic" role="presentation">
+              <hr class="list-divider inset">
+              <h3 class="list-group__subheader">Files</h3>
+              <ul class="list two-line avatar-list demo-list demo-with-avatars demo-icon-placeholders">
+                <li class="list-item">
+                  <span class="graphic" role="presentation">
                     <i class="material-icons" aria-hidden="true">insert_drive_file</i>
                   </span>
-                  <span class="mdc-list-item__text">
+                  <span class="text">
                     Vacation Itinerary
-                    <span class="mdc-list-item__secondary-text">Jan 10, 2014</span>
+                    <span class="secondary-text">Jan 10, 2014</span>
                   </span>
-                  <a href="#" class="mdc-list-item__meta material-icons"
+                  <a href="#" class="meta material-icons"
                      aria-label="View more information" title="More info"
                      onclick="event.preventDefault();">
                     info
                   </a>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__graphic" role="presentation">
+                <li class="list-item">
+                  <span class="graphic" role="presentation">
                     <i class="material-icons" aria-hidden="true">insert_drive_file</i>
                   </span>
-                  <span class="mdc-list-item__text">
+                  <span class="text">
                     Kitchen Remodel
-                    <span class="mdc-list-item__secondary-text">Jan 20, 2014</span>
+                    <span class="secondary-text">Jan 20, 2014</span>
                   </span>
-                  <a href="#" class="mdc-list-item__meta material-icons"
+                  <a href="#" class="meta material-icons"
                      aria-label="View more information" title="More info"
                      onclick="event.preventDefault();">
                     info
@@ -977,80 +977,80 @@
               </ul>
             </div>
           </section>
-          <section class="mdc-theme--dark">
+          <section class="theme--dark">
             <h3>Example - Two-Line Lists, Avatars, Metadata, Inset Dividers (Dark)</h3>
-            <div class="mdc-list-group">
-              <h3 class="mdc-list-group__subheader">Folders</h3>
-              <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list demo-list demo-list--with-avatars demo-list--icon-placeholders">
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__graphic" role="presentation">
+            <div class="list-group">
+              <h3 class="list-group__subheader">Folders</h3>
+              <ul class="list two-line avatar-list demo-list demo-with-avatars demo-icon-placeholders">
+                <li class="list-item">
+                  <span class="graphic" role="presentation">
                     <i class="material-icons" aria-hidden="true">folder</i>
                   </span>
-                  <span class="mdc-list-item__text">
+                  <span class="text">
                     Photos
-                    <span class="mdc-list-item__secondary-text">Jan 9, 2014</span>
+                    <span class="secondary-text">Jan 9, 2014</span>
                   </span>
-                  <a href="#" class="mdc-list-item__meta material-icons"
+                  <a href="#" class="meta material-icons"
                      aria-label="View more information" title="More info"
                      onclick="event.preventDefault();">
                     info
                   </a>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__graphic" role="presentation">
+                <li class="list-item">
+                  <span class="graphic" role="presentation">
                     <i class="material-icons" aria-hidden="true">folder</i>
                   </span>
-                  <span class="mdc-list-item__text">
+                  <span class="text">
                     Recipes
-                    <span class="mdc-list-item__secondary-text">Jan 17, 2014</span>
+                    <span class="secondary-text">Jan 17, 2014</span>
                   </span>
-                  <a href="#" class="mdc-list-item__meta material-icons"
+                  <a href="#" class="meta material-icons"
                      aria-label="View more information" title="More info"
                      onclick="event.preventDefault();">
                     info
                   </a>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__graphic" role="presentation">
+                <li class="list-item">
+                  <span class="graphic" role="presentation">
                     <i class="material-icons" aria-hidden="true">folder</i>
                   </span>
-                  <span class="mdc-list-item__text">
+                  <span class="text">
                     Work
-                    <span class="mdc-list-item__secondary-text">Jan 28, 2014</span>
+                    <span class="secondary-text">Jan 28, 2014</span>
                   </span>
-                  <a href="#" class="mdc-list-item__meta material-icons"
+                  <a href="#" class="meta material-icons"
                      aria-label="View more information" title="More info"
                      onclick="event.preventDefault();">
                     info
                   </a>
                 </li>
               </ul>
-              <hr class="mdc-list-divider mdc-list-divider--inset mdc-list-divider--padded">
-              <h3 class="mdc-list-group__subheader">Files</h3>
-              <ul class="mdc-list mdc-list--two-line mdc-list--avatar-list demo-list demo-list--with-avatars demo-list--icon-placeholders">
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__graphic" role="presentation">
+              <hr class="list-divider inset padded">
+              <h3 class="list-group__subheader">Files</h3>
+              <ul class="list two-line avatar-list demo-list demo-with-avatars demo-icon-placeholders">
+                <li class="list-item">
+                  <span class="graphic" role="presentation">
                     <i class="material-icons" aria-hidden="true">insert_drive_file</i>
                   </span>
-                  <span class="mdc-list-item__text">
+                  <span class="text">
                     Vacation Itinerary
-                    <span class="mdc-list-item__secondary-text">Jan 10, 2014</span>
+                    <span class="secondary-text">Jan 10, 2014</span>
                   </span>
-                  <a href="#" class="mdc-list-item__meta material-icons"
+                  <a href="#" class="meta material-icons"
                      aria-label="View more information" title="More info"
                      onclick="event.preventDefault();">
                     info
                   </a>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__graphic" role="presentation">
+                <li class="list-item">
+                  <span class="graphic" role="presentation">
                     <i class="material-icons" aria-hidden="true">insert_drive_file</i>
                   </span>
-                  <span class="mdc-list-item__text">
+                  <span class="text">
                     Kitchen Remodel
-                    <span class="mdc-list-item__secondary-text">Jan 20, 2014</span>
+                    <span class="secondary-text">Jan 20, 2014</span>
                   </span>
-                  <a href="#" class="mdc-list-item__meta material-icons"
+                  <a href="#" class="meta material-icons"
                      aria-label="View more information" title="More info"
                      onclick="event.preventDefault();">
                     info
@@ -1064,44 +1064,44 @@
           <h2>Interactive Lists (with ink ripple)</h2>
           <section>
             <h3>Example - Interactive List</h3>
-            <nav class="mdc-list demo-list" data-demo-interactive-list>
-              <a href="#" class="mdc-list-item">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+            <nav class="list demo-list" data-demo-interactive-list>
+              <a href="#" class="list-item">
+                <i class="material-icons graphic" aria-hidden="true">
                   network_wifi
                 </i>
                 Wi-Fi
               </a>
-              <a href="#" class="mdc-list-item">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+              <a href="#" class="list-item">
+                <i class="material-icons graphic" aria-hidden="true">
                   bluetooth
                 </i>
                 Bluetooth
               </a>
-              <a href="#" class="mdc-list-item">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+              <a href="#" class="list-item">
+                <i class="material-icons graphic" aria-hidden="true">
                   data_usage
                 </i>
                 Data Usage
               </a>
             </nav>
           </section>
-          <section class="mdc-theme--dark">
+          <section class="theme--dark">
             <h3>Example - Interactive List (Dark Theme)</h3>
-            <nav class="mdc-list demo-list" data-demo-interactive-list>
-              <a href="#" class="mdc-list-item">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+            <nav class="list demo-list" data-demo-interactive-list>
+              <a href="#" class="list-item">
+                <i class="material-icons graphic" aria-hidden="true">
                   network_wifi
                 </i>
                 Wi-Fi
               </a>
-              <a href="#" class="mdc-list-item">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+              <a href="#" class="list-item">
+                <i class="material-icons graphic" aria-hidden="true">
                   bluetooth
                 </i>
                 Bluetooth
               </a>
-              <a href="#" class="mdc-list-item">
-                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">
+              <a href="#" class="list-item">
+                <i class="material-icons graphic" aria-hidden="true">
                   data_usage
                 </i>
                 Data Usage
@@ -1114,8 +1114,8 @@
     <script src="/assets/material-components-web.js"></script>
     <script>
       (function() {
-        var formField = new mdc.formField.MDCFormField(document.querySelector('.mdc-form-field'));
-        var cb = mdc.checkbox.MDCCheckbox.attachTo(document.querySelector('.mdc-checkbox'));
+        var formField = new mdc.formField.MDCFormField(document.querySelector('.form-field'));
+        var cb = mdc.checkbox.MDCCheckbox.attachTo(document.querySelector('.checkbox'));
         formField.input = cb;
         var demoWrapper = document.getElementById('demo-wrapper');
         var hero = document.querySelector('.hero');
@@ -1132,7 +1132,7 @@
         setTimeout(initInteractiveLists, 250);
         function initInteractiveLists() {
           var interactiveListItems = document.querySelectorAll(
-            '[data-demo-interactive-list] .mdc-list-item, .hero .mdc-list-item'
+            '[data-demo-interactive-list] .list-item, .hero .list-item'
           );
           for (var i = 0, li; li = interactiveListItems[i]; i++) {
             mdc.ripple.MDCRipple.attachTo(li);

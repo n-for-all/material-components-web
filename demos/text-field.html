@@ -25,8 +25,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
-      .mdc-theme--dark {
-        --mdc-theme-primary: var(--mdc-theme-secondary, #64dd17);
+      .theme--dark {
+        --theme-primary: var(--theme-secondary, #64dd17);
         background-color: #303030;
       }
 
@@ -39,7 +39,7 @@
         padding: 24px;
       }
 
-      .hero .mdc-text-field {
+      .hero .text-field {
         min-width: 240px;
       }
 
@@ -59,24 +59,24 @@
 
     </style>
   </head>
-  <body class="mdc-typography">
-    <header class="mdc-toolbar mdc-toolbar--fixed">
-      <div class="mdc-toolbar__row">
-        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+  <body class="typography">
+    <header class="toolbar fixed">
+      <div class="row">
+        <section class="section align-start">
           <span class="catalog-back">
-            <a href="/" class="mdc-toolbar__menu-icon"><i class="material-icons">&#xE5C4;</i></a>
+            <a href="/" class="menu-icon"><i class="material-icons">&#xE5C4;</i></a>
           </span>
-          <span class="mdc-toolbar__title catalog-title">Text Field</span>
+          <span class="title catalog-title">Text Field</span>
         </section>
       </div>
     </header>
     <main>
-      <div class="mdc-toolbar-fixed-adjust"></div>
+      <div class="toolbar-fixed-adjust"></div>
       <section class="hero">
-        <div class="mdc-text-field">
-          <input type="text" class="mdc-text-field__input" id="my-text-field" aria-controls="my-text-field-helper-text">
-          <label for="my-text-field" class="mdc-text-field__label">Text Field</label>
-          <div class="mdc-text-field__bottom-line"></div>
+        <div class="text-field">
+          <input type="text" class="input" id="my-text-field" aria-controls="my-text-field-helper-text">
+          <label for="my-text-field" class="label">Text Field</label>
+          <div class="bottom-line"></div>
         </div>
       </section>
 
@@ -89,12 +89,12 @@
       <section class="example">
         <h2>Full Functionality JS Component (Floating Label, Validation)</h2>
         <section id="demo-text-field-wrapper">
-          <div class="mdc-text-field">
-            <input type="text" class="mdc-text-field__input" id="my-text-field" aria-controls="my-text-field-helper-text">
-            <label for="my-text-field" class="mdc-text-field__label">Email Address</label>
-            <div class="mdc-text-field__bottom-line"></div>
+          <div class="text-field">
+            <input type="text" class="input" id="my-text-field" aria-controls="my-text-field-helper-text">
+            <label for="my-text-field" class="label">Email Address</label>
+            <div class="bottom-line"></div>
           </div>
-          <p id="my-text-field-helper-text" class="mdc-text-field-helper-text"
+          <p id="my-text-field-helper-text" class="text-field-helper-text"
              aria-hidden="true" style="display:none;">
             Helper Text (possibly validation message)
           </p>
@@ -136,14 +136,14 @@
       </section>
       <section class="example">
         <h2>Password field with validation</h2>
-        <div class="mdc-text-field">
-          <input required pattern=".{8,}" type="password" class="mdc-text-field__input" id="pw"
+        <div class="text-field">
+          <input required pattern=".{8,}" type="password" class="input" id="pw"
                  aria-controls="pw-validation-msg"
                  autocomplete="current-password">
-          <label for="pw" class="mdc-text-field__label">Choose password</label>
-          <div class="mdc-text-field__bottom-line"></div>
+          <label for="pw" class="label">Choose password</label>
+          <div class="bottom-line"></div>
         </div>
-        <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg"
+        <p class="text-field-helper-text persistent validation-msg"
            id="pw-validation-msg">
           Must be at least 8 characters long
         </p>
@@ -151,13 +151,13 @@
       <section class="example">
         <h2>Text Field box</h2>
         <div id="demo-tf-box-wrapper">
-          <div id="tf-box-example" class="mdc-text-field mdc-text-field--box" data-demo-no-auto-js>
-            <input required pattern=".{8,}" type="text" id="tf-box" class="mdc-text-field__input"
+          <div id="tf-box-example" class="text-field box" data-demo-no-auto-js>
+            <input required pattern=".{8,}" type="text" id="tf-box" class="input"
                    aria-controls="name-validation-message">
-            <label for="tf-box" class="mdc-text-field__label">Your Name</label>
-            <div class="mdc-text-field__bottom-line"></div>
+            <label for="tf-box" class="label">Your Name</label>
+            <div class="bottom-line"></div>
           </div>
-          <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+          <p class="text-field-helper-text validation-msg"
              id="name-validation-msg">
             Must be at least 8 characters
           </p>
@@ -198,11 +198,11 @@
             });
 
             document.getElementById('box-dark-theme').addEventListener('change', function(evt) {
-              wrapper.classList[evt.target.checked ? 'add' : 'remove']('mdc-theme--dark');
+              wrapper.classList[evt.target.checked ? 'add' : 'remove']('theme--dark');
             });
 
             document.getElementById('box-dense').addEventListener('change', function(evt) {
-              tfEl.classList[evt.target.checked ? 'add' : 'remove']('mdc-text-field--dense');
+              tfEl.classList[evt.target.checked ? 'add' : 'remove']('dense');
               tf.ripple.layout();
             });
           }, 0);
@@ -230,20 +230,20 @@
         </div>
         <div id="demo-tf-box-leading-wrapper">
           <div id="tf-box-leading-example"
-            class="mdc-text-field mdc-text-field--box mdc-text-field--with-leading-icon" data-demo-no-auto-js>
-            <i class="material-icons mdc-text-field__icon" tabindex="0">event</i>
-            <input type="text" id="tf-box-leading" class="mdc-text-field__input custom-text-field-input">
-            <label for="tf-box-leading" class="mdc-text-field__label">Your name</label>
-            <div class="mdc-text-field__bottom-line"></div>
+            class="text-field box with-leading-icon" data-demo-no-auto-js>
+            <i class="material-icons icon" tabindex="0">event</i>
+            <input type="text" id="tf-box-leading" class="input custom-text-field-input">
+            <label for="tf-box-leading" class="label">Your name</label>
+            <div class="bottom-line"></div>
           </div>
         </div>
         <div id="demo-tf-box-trailing-wrapper">
           <div id="tf-box-trailing-example"
-            class="mdc-text-field mdc-text-field--box mdc-text-field--with-trailing-icon" data-demo-no-auto-js>
-            <input type="text" id="tf-box-trailing" class="mdc-text-field__input custom-text-field-input">
-            <label for="tf-box-trailing" class="mdc-text-field__label">Your other name</label>
-            <i class="material-icons mdc-text-field__icon" tabindex="0">delete</i>
-            <div class="mdc-text-field__bottom-line"></div>
+            class="text-field box with-trailing-icon" data-demo-no-auto-js>
+            <input type="text" id="tf-box-trailing" class="input custom-text-field-input">
+            <label for="tf-box-trailing" class="label">Your other name</label>
+            <i class="material-icons icon" tabindex="0">delete</i>
+            <div class="bottom-line"></div>
           </div>
         </div>
         <div>
@@ -270,11 +270,11 @@
 
       <section class="example">
         <h2>CSS Only Text Field</h2>
-        <div class="mdc-form-field mdc-form-field--align-end">
-          <div class="mdc-text-field" data-demo-no-auto-js>
-            <input type="text" class="mdc-text-field__input" id="css-only-text-field"
+        <div class="form-field align-end">
+          <div class="text-field" data-demo-no-auto-js>
+            <input type="text" class="input" id="css-only-text-field"
                    placeholder="Name">
-            <div class="mdc-text-field__bottom-line"></div>
+            <div class="bottom-line"></div>
           </div>
           <label for="css-only-text-field">Your name:</label>
         </div>
@@ -283,29 +283,29 @@
         <h2>CSS Only Text Field box</h2>
         <div>
           <label for="css-only-text-field-box">Your name:</label>
-          <div class="mdc-text-field mdc-text-field--box" data-demo-no-auto-js>
-            <input type="text" class="mdc-text-field__input" id="css-only-text-field-box"
+          <div class="text-field box" data-demo-no-auto-js>
+            <input type="text" class="input" id="css-only-text-field-box"
                    placeholder="Name">
           </div>
         </div>
       </section>
       <section class="example">
         <h2>Preventing FOUC</h2>
-        <div class="mdc-text-field mdc-text-field--upgraded">
-          <input id="fouc" type="text" class="mdc-text-field__input" value="Pre-filled value">
-          <label for="fouc" class="mdc-text-field__label mdc-text-field__label--float-above">
+        <div class="text-field upgraded">
+          <input id="fouc" type="text" class="input" value="Pre-filled value">
+          <label for="fouc" class="label float-above">
             Label floating above
           </label>
-          <div class="mdc-text-field__bottom-line"></div>
+          <div class="bottom-line"></div>
         </div>
       </section>
 
       <section class="example">
         <h2>Textarea</h2>
         <section id="demo-text-field-textarea-wrapper">
-          <div class="mdc-text-field mdc-text-field--textarea">
-            <textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40"></textarea>
-            <label for="textarea" class="mdc-text-field__label">Textarea Label</label>
+          <div class="text-field textarea">
+            <textarea id="textarea" class="input" rows="8" cols="40"></textarea>
+            <label for="textarea" class="label">Textarea Label</label>
           </div>
         </section>
         <div>
@@ -329,8 +329,8 @@
       <section class="example">
         <h2>CSS Only Textarea</h2>
         <section>
-          <div class="mdc-text-field mdc-text-field--textarea" data-demo-no-auto-js>
-            <textarea id="textarea-css-only" class="mdc-text-field__input" rows="8" cols="40" placeholder="Enter something about yourself"></textarea>
+          <div class="text-field textarea" data-demo-no-auto-js>
+            <textarea id="textarea-css-only" class="input" rows="8" cols="40" placeholder="Enter something about yourself"></textarea>
           </div>
         </section>
       </section>
@@ -338,13 +338,13 @@
       <section class="example">
         <h2>Full-Width Text Field and Textarea</h2>
         <div id="demo-fullwidth-wrapper">
-          <div class="mdc-text-field mdc-text-field--fullwidth">
-            <input class="mdc-text-field__input" type="text" placeholder="Subject" aria-label="Subject">
-            <div class="mdc-text-field__bottom-line"></div>
+          <div class="text-field fullwidth">
+            <input class="input" type="text" placeholder="Subject" aria-label="Subject">
+            <div class="bottom-line"></div>
           </div>
-          <div class="mdc-text-field mdc-text-field--textarea mdc-text-field--fullwidth full-width-textarea-example">
-            <textarea id="full-width-textarea" class="mdc-text-field__input" rows="8"></textarea>
-            <label for="full-width-textarea" class="mdc-text-field__label">Textarea Label</label>
+          <div class="text-field textarea fullwidth full-width-textarea-example">
+            <textarea id="full-width-textarea" class="input" rows="8"></textarea>
+            <label for="full-width-textarea" class="label">Textarea Label</label>
           </div>
         </div>
         <div>
@@ -365,7 +365,7 @@
     <script>
       (function() {
         var tfs = document.querySelectorAll(
-          '.mdc-text-field:not([data-demo-no-auto-js])'
+          '.text-field:not([data-demo-no-auto-js])'
         );
         for (var i = 0, tf; tf = tfs[i]; i++) {
           mdc.textField.MDCTextField.attachTo(tf);
@@ -382,7 +382,7 @@
         var tfTrailing = new mdc.textField.MDCTextField(tfTrailingEl);
         var wrapperTrailing = document.getElementById('demo-tf-box-trailing-wrapper');
 
-        var tfIcons = document.querySelectorAll('.mdc-text-field__icon');
+        var tfIcons = document.querySelectorAll('.icon');
 
         document.getElementById('box-disable-leading-trailing').addEventListener('change', function(evt) {
           tfLeading.disabled = evt.target.checked;
@@ -402,14 +402,14 @@
         });
 
         document.getElementById('box-dark-theme-leading-trailing').addEventListener('change', function(evt) {
-          wrapperLeading.classList[evt.target.checked ? 'add' : 'remove']('mdc-theme--dark');
-          wrapperTrailing.classList[evt.target.checked ? 'add' : 'remove']('mdc-theme--dark');
+          wrapperLeading.classList[evt.target.checked ? 'add' : 'remove']('theme--dark');
+          wrapperTrailing.classList[evt.target.checked ? 'add' : 'remove']('theme--dark');
         });
 
         document.getElementById('box-dense-leading-trailing').addEventListener('change', function(evt) {
-          tfLeadingEl.classList[evt.target.checked ? 'add' : 'remove']('mdc-text-field--dense');
+          tfLeadingEl.classList[evt.target.checked ? 'add' : 'remove']('dense');
           tfLeading.ripple.layout();
-          tfTrailingEl.classList[evt.target.checked ? 'add' : 'remove']('mdc-text-field--dense');
+          tfTrailingEl.classList[evt.target.checked ? 'add' : 'remove']('dense');
           tfTrailing.ripple.layout();
         });
 
@@ -424,8 +424,8 @@
     <script>
       (function() {
         var section = document.getElementById('demo-text-field-wrapper');
-        var tfRoot = section.querySelector('.mdc-text-field');
-        var helperText = section.querySelector('.mdc-text-field-helper-text');
+        var tfRoot = section.querySelector('.text-field');
+        var helperText = section.querySelector('.text-field-helper-text');
         var tf = new mdc.textField.MDCTextField(tfRoot);
 
         document.getElementById('disable').addEventListener('change', function(evt) {
@@ -442,15 +442,15 @@
         });
         document.getElementById('dark-theme').addEventListener('change', function(evt) {
           var target = evt.target;
-          section.classList[target.checked ? 'add' : 'remove']('mdc-theme--dark');
+          section.classList[target.checked ? 'add' : 'remove']('theme--dark');
         });
         document.getElementById('dense').addEventListener('change', function(evt) {
           var target = evt.target;
-          tfRoot.classList[target.checked ? 'add' : 'remove']('mdc-text-field--dense');
+          tfRoot.classList[target.checked ? 'add' : 'remove']('dense');
         });
         document.getElementById('required').addEventListener('change', function(evt) {
           var target = evt.target;
-          tfRoot.querySelector('.mdc-text-field__input').required = target.checked;
+          tfRoot.querySelector('.input').required = target.checked;
         });
         document.getElementById('use-helper-text').addEventListener('change', function(evt) {
           var target = evt.target;
@@ -462,13 +462,13 @@
         document.getElementById('persistent-helper-text').addEventListener('change', function(evt) {
           var target = evt.target;
           helperText.classList[target.checked ? 'add' : 'remove'](
-            'mdc-text-field-helper-text--persistent'
+            'persistent'
           );
         });
         document.getElementById('helper-text-as-validation').addEventListener('change', function(evt) {
           var target = evt.target;
           helperText.classList[target.checked ? 'add' : 'remove'](
-            'mdc-text-field-helper-text--validation-msg'
+            'validation-msg'
           );
         });
       })();
@@ -476,7 +476,7 @@
     <script>
       (function() {
         var section = document.getElementById('demo-text-field-textarea-wrapper');
-        var tfRoot = section.querySelector('.mdc-text-field');
+        var tfRoot = section.querySelector('.text-field');
         var tf = new mdc.textField.MDCTextField(tfRoot);
         document.getElementById('textarea-disable').addEventListener('change', function(evt) {
           var target = evt.target;
@@ -492,19 +492,19 @@
         });
         document.getElementById('textarea-dark-theme').addEventListener('change', function(evt) {
           var target = evt.target;
-          section.classList[target.checked ? 'add' : 'remove']('mdc-theme--dark');
+          section.classList[target.checked ? 'add' : 'remove']('theme--dark');
         });
         document.getElementById('textarea-required').addEventListener('change', function(evt) {
           var target = evt.target;
-          tfRoot.querySelector('.mdc-text-field__input').required = target.checked;
+          tfRoot.querySelector('.input').required = target.checked;
         });
       })();
     </script>
     <script charset="utf-8">
       (function() {
         var section = document.getElementById('demo-fullwidth-wrapper');
-        var tfRoot = section.querySelector('.mdc-text-field');
-        var tfMultiRoot = section.querySelector('.mdc-text-field--textarea');
+        var tfRoot = section.querySelector('.text-field');
+        var tfMultiRoot = section.querySelector('.textarea');
         var tf = new mdc.textField.MDCTextField(tfRoot);
         var tfMulti = new mdc.textField.MDCTextField(tfMultiRoot);
 
@@ -518,13 +518,13 @@
         document.getElementById('fullwidth-dense').addEventListener('change', function(evt) {
           var target = evt.target;
           [tfRoot, tfMultiRoot].forEach(function(el) {
-            el.classList[target.checked ? 'add' : 'remove']('mdc-text-field--dense');
+            el.classList[target.checked ? 'add' : 'remove']('dense');
           });
         });
 
         document.getElementById('fullwidth-dark-theme').addEventListener('change', function(evt) {
           var target = evt.target;
-          section.classList[target.checked ? 'add' : 'remove']('mdc-theme--dark');
+          section.classList[target.checked ? 'add' : 'remove']('theme--dark');
         });
       })();
     </script>

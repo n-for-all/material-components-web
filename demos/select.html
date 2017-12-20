@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
-      .mdc-theme--dark {
+      .theme--dark {
         background-color: #303030;
       }
 
@@ -35,8 +35,8 @@
       }
 
       /* Hack to work around style-loader asynchronously loading styles. */
-      /* Equivalent to using mdc-typography's subheading2, which is used in the sass file. */
-      .mdc-select {
+      /* Equivalent to using typography's subheading2, which is used in the sass file. */
+      .select {
         font-family: Roboto, sans-serif;
         font-size: 1rem;
         font-weight: 400;
@@ -50,45 +50,45 @@
       }
     </style>
   </head>
-  <body class="mdc-typography">
-    <header class="mdc-toolbar mdc-toolbar--fixed">
-      <div class="mdc-toolbar__row">
-        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+  <body class="typography">
+    <header class="toolbar fixed">
+      <div class="row">
+        <section class="section align-start">
           <span class="catalog-back">
-            <a href="/" class="mdc-toolbar__menu-icon"><i class="material-icons">&#xE5C4;</i></a>
+            <a href="/" class="menu-icon"><i class="material-icons">&#xE5C4;</i></a>
           </span>
-          <span class="mdc-toolbar__title catalog-title">Select</span>
+          <span class="title catalog-title">Select</span>
         </section>
       </div>
     </header>
 
     <main>
-      <div class="mdc-toolbar-fixed-adjust"></div>
+      <div class="toolbar-fixed-adjust"></div>
       <section class="hero">
-        <div id="hero-js-select" class="mdc-select" role="listbox" tabindex="0">
-          <div class="mdc-select__surface">
-            <div class="mdc-select__label">Pick a Food Group</div>
-            <div class="mdc-select__selected-text"></div>
-            <div class="mdc-select__bottom-line"></div>
+        <div id="hero-js-select" class="select" role="listbox" tabindex="0">
+          <div class="surface">
+            <div class="label">Pick a Food Group</div>
+            <div class="selected-text"></div>
+            <div class="bottom-line"></div>
           </div>
-          <div class="mdc-simple-menu mdc-select__menu">
-            <ul class="mdc-list mdc-simple-menu__items">
-              <li class="mdc-list-item" role="option" tabindex="0">
+          <div class="simple-menu menu">
+            <ul class="list items">
+              <li class="list-item" role="option" tabindex="0">
                 Bread, Cereal, Rice, and Pasta
               </li>
-              <li class="mdc-list-item" role="option" aria-disabled="true" tabindex="0">
+              <li class="list-item" role="option" aria-disabled="true" tabindex="0">
                 Vegetables
               </li>
-              <li class="mdc-list-item" role="option" tabindex="0">
+              <li class="list-item" role="option" tabindex="0">
                 Fruit
               </li>
-              <li class="mdc-list-item" role="option" tabindex="0">
+              <li class="list-item" role="option" tabindex="0">
                 Milk, Yogurt, and Cheese
               </li>
-              <li class="mdc-list-item" role="option" tabindex="0">
+              <li class="list-item" role="option" tabindex="0">
                 Meat, Poultry, Fish, Dry Beans, Eggs, and Nuts
               </li>
-              <li class="mdc-list-item" role="option" tabindex="0">
+              <li class="list-item" role="option" tabindex="0">
                 Fats, Oils, and Sweets
               </li>
             </ul>
@@ -97,23 +97,23 @@
       </section>
 
       <section class="example">
-        <h2 class="mdc-typography--title">Fully-Featured Component</h2>
+        <h2 class="title">Fully-Featured Component</h2>
         <section id="box-demo-wrapper">
-          <div id="js-select-box" class="mdc-select" role="listbox" tabindex="0">
-            <div class="mdc-select__surface">
-              <div class="mdc-select__label">Food Group</div>
-              <div class="mdc-select__selected-text"></div>
-              <div class="mdc-select__bottom-line"></div>
+          <div id="js-select-box" class="select" role="listbox" tabindex="0">
+            <div class="surface">
+              <div class="label">Food Group</div>
+              <div class="selected-text"></div>
+              <div class="bottom-line"></div>
             </div>
-            <div class="mdc-simple-menu mdc-select__menu">
-              <ul class="mdc-list mdc-simple-menu__items">
-                <li class="mdc-list-item" role="option" id="fruit-roll-ups" tabindex="0">
+            <div class="simple-menu menu">
+              <ul class="list items">
+                <li class="list-item" role="option" id="fruit-roll-ups" tabindex="0">
                   Fruit Roll Ups
                 </li>
-                <li class="mdc-list-item" role="option" id="cotton-candy" tabindex="0">
+                <li class="list-item" role="option" id="cotton-candy" tabindex="0">
                   Candy (cotton)
                 </li>
-                <li class="mdc-list-item" role="option" id="vegetables" aria-disabled="true" tabindex="0">
+                <li class="list-item" role="option" id="vegetables" aria-disabled="true" tabindex="0">
                   Vegetables
                 </li>
               </ul>
@@ -136,9 +136,9 @@
       </section>
 
       <section class="example">
-        <h2 class="mdc-typography--title">CSS Only</h2>
-        <div class="mdc-select">
-          <select class="mdc-select__surface">
+        <h2 class="title">CSS Only</h2>
+        <div class="select">
+          <select class="surface">
             <option value="" selected>Pick a food group</option>
             <option value="grains">Bread, Cereal, Rice, and Pasta</option>
             <option value="vegetables" disabled>Vegetables</option>
@@ -147,25 +147,25 @@
             <option value="meat">Meat, Poultry, Fish, Dry Beans, Eggs, and Nuts</option>
             <option value="fats">Fats, Oils, and Sweets</option>
           </select>
-          <div class="mdc-select__bottom-line"></div>
+          <div class="bottom-line"></div>
         </div>
       </section>
 
       <section class="example">
         <h2>Select Multiple - CSS Only</h2>
-        <select multiple size="8" class="mdc-multi-select mdc-list">
+        <select multiple size="8" class="multi-select list">
 
-          <optgroup class="mdc-list-group" label="Fats, Oils, &amp; Sweets">
-            <option class="mdc-list-item">Olive Oil</option>
-            <option class="mdc-list-item">Brown Sugar</option>
-            <option class="mdc-list-item">Ice Cream</option>
+          <optgroup class="list-group" label="Fats, Oils, &amp; Sweets">
+            <option class="list-item">Olive Oil</option>
+            <option class="list-item">Brown Sugar</option>
+            <option class="list-item">Ice Cream</option>
           </optgroup>
-          <option class="mdc-list-divider" role="presentation" disabled />
+          <option class="list-divider" role="presentation" disabled />
 
-          <optgroup class="mdc-list-group" label="Dairy">
-            <option class="mdc-list-item">Milk</option>
-            <option class="mdc-list-item">Cheese</option>
-            <option class="mdc-list-item">More Cheese</option>
+          <optgroup class="list-group" label="Dairy">
+            <option class="list-item">Milk</option>
+            <option class="list-item">Cheese</option>
+            <option class="list-item">More Cheese</option>
           </optgroup>
 
         </select>
@@ -200,7 +200,7 @@
         var disabledCb = document.getElementById('disabled');
 
         darkThemeCb.addEventListener('change', function() {
-          boxDemoWrapper.classList[darkThemeCb.checked ? 'add' : 'remove']('mdc-theme--dark');
+          boxDemoWrapper.classList[darkThemeCb.checked ? 'add' : 'remove']('theme--dark');
         });
         rtlCb.addEventListener('change', function() {
           if (rtlCb.checked) {

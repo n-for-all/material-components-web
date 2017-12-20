@@ -30,25 +30,25 @@
         margin-left: 0;
       }
       #my-flexible-header {
-        --mdc-toolbar-ratio-to-extend-flexible: 2;
+        --toolbar-ratio-to-extend-flexible: 2;
         background-color: rgb(255, 64, 129);
       }
-      #my-flexible-header .mdc-toolbar__title {
+      #my-flexible-header .title {
         font-size: 5rem;
         transform: translateY(-30px);
       }
     </style>
   </head>
-  <body class="mdc-typography">
-    <header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--waterfall mdc-toolbar--flexible demo-toolbar" id="my-flexible-header">
-      <div class="mdc-toolbar__row">
-        <section class="mdc-toolbar__section mdc-toolbar__section--align-center">
-          <span class="mdc-toolbar__title demo-custom-scroll-title">Hey!</span>
+  <body class="typography">
+    <header class="toolbar fixed waterfall flexible demo-toolbar" id="my-flexible-header">
+      <div class="row">
+        <section class="section align-center">
+          <span class="title demo-custom-scroll-title">Hey!</span>
         </section>
       </div>
     </header>
     <main>
-      <div class="mdc-toolbar-fixed-adjust">
+      <div class="toolbar-fixed-adjust">
         <p class="demo-paragraph">
           Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
         </p>
@@ -68,7 +68,7 @@
       (function() {
         var pollId = 0;
         pollId = setInterval(function() {
-          var pos = getComputedStyle(document.querySelector('.mdc-toolbar')).position;
+          var pos = getComputedStyle(document.querySelector('.toolbar')).position;
           if (pos === 'fixed' || pos === 'relative') {
             init();
             clearInterval(pollId);
@@ -87,8 +87,8 @@
           var endTransY = 0;
           var ratioSpan = document.querySelector("#ratio");
           var myFlexibleHeader = document.querySelector("#my-flexible-header");
-          var myFlexibleHeaderTitle = document.querySelector("#my-flexible-header .mdc-toolbar__title");
-          var toolbar = mdc.toolbar.MDCToolbar.attachTo(document.querySelector('.mdc-toolbar'));
+          var myFlexibleHeaderTitle = document.querySelector("#my-flexible-header .title");
+          var toolbar = mdc.toolbar.MDCToolbar.attachTo(document.querySelector('.toolbar'));
           toolbar.listen('MDCToolbar:change', function(evt) {
             var flexibleExpansionRatio = evt.detail.flexibleExpansionRatio;
             var currentR = Math.round(endR - (endR - initialR) * flexibleExpansionRatio);
@@ -101,7 +101,7 @@
             myFlexibleHeaderTitle.style.fontSize = `${currentFontsize}rem`;
             ratioSpan.innerHTML = flexibleExpansionRatio.toFixed(2);
           });
-          toolbar.fixedAdjustElement = document.querySelector('.mdc-toolbar-fixed-adjust');
+          toolbar.fixedAdjustElement = document.querySelector('.toolbar-fixed-adjust');
         }
       })();
     </script>

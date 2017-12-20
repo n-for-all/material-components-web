@@ -13,20 +13,18 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-
 @import "./variables";
 @import "./mixins";
 
-.mdc-typography {
-  @include mdc-typography-base;
-}
+.typography {
+    @include mdc-typography-base;
+    @each $style in map-keys($mdc-typography-styles) {
+        .#{$style} {
+            @include mdc-typography($style);
 
-@each $style in map-keys($mdc-typography-styles) {
-  .mdc-typography--#{$style} {
-    @include mdc-typography($style);
-  }
-
-  .mdc-typography--adjust-margin.mdc-typography--#{$style} {
-    @include mdc-typography-adjust-margin($style);
-  }
+            &.adjust-margin {
+                @include mdc-typography-adjust-margin($style);
+            }
+        }
+    }
 }

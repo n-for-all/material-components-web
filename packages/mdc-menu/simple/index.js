@@ -77,7 +77,7 @@ class MDCSimpleMenu extends MDCComponent {
    */
   get items() {
     const {itemsContainer_: itemsContainer} = this;
-    return [].slice.call(itemsContainer.querySelectorAll('.mdc-list-item[role]'));
+    return [].slice.call(itemsContainer.querySelectorAll('.list-item[role]'));
   }
 
   /** @return {!MDCSimpleMenuFoundation} */
@@ -93,7 +93,7 @@ class MDCSimpleMenu extends MDCComponent {
         const {itemsContainer_: itemsContainer} = this;
         return {width: itemsContainer.offsetWidth, height: itemsContainer.offsetHeight};
       },
-      hasAnchor: () => this.root_.parentElement && this.root_.parentElement.classList.contains('mdc-menu-anchor'),
+      hasAnchor: () => this.root_.parentElement && this.root_.parentElement.classList.contains('menu-anchor'),
       getAnchorDimensions: () => this.root_.parentElement.getBoundingClientRect(),
       getWindowDimensions: () => {
         return {width: window.innerWidth, height: window.innerHeight};

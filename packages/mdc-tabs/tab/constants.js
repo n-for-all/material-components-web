@@ -15,7 +15,7 @@
  */
 
 export const cssClasses = {
-  ACTIVE: 'mdc-tab--active',
+  ACTIVE: 'active',
 };
 
 export const strings = {

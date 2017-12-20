@@ -45,37 +45,37 @@
         font-size: 16px;
       }
 
-      section.example.mdc-theme--dark {
+      section.example.theme--dark {
         background-color: #333;
       }
 
-      section.example.mdc-theme--dark h2 {
+      section.example.theme--dark h2 {
         color: white;
       }
 
-      section.example.mdc-theme--dark label {
+      section.example.theme--dark label {
         color: white;
       }
     </style>
   </head>
-  <body class="mdc-typography">
-    <header class="mdc-toolbar mdc-toolbar--fixed demo-header-toolbar">
-      <div class="mdc-toolbar__row">
-        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+  <body class="typography">
+    <header class="toolbar fixed demo-header-toolbar">
+      <div class="row">
+        <section class="section align-start">
           <span class="catalog-back">
-            <a href="/" class="mdc-toolbar__menu-icon"><i class="material-icons">&#xE5C4;</i></a>
+            <a href="/" class="menu-icon"><i class="material-icons">&#xE5C4;</i></a>
           </span>
-          <span class="mdc-toolbar__title catalog-title">Switch</span>
+          <span class="title catalog-title">Switch</span>
         </section>
       </div>
     </header>
     <main>
-      <div class="mdc-toolbar-fixed-adjust"></div>
+      <div class="toolbar-fixed-adjust"></div>
       <section class="hero">
-        <div class="mdc-switch">
-          <input type="checkbox" class="mdc-switch__native-control" />
-          <div class="mdc-switch__background">
-            <div class="mdc-switch__knob"></div>
+        <div class="switch">
+          <input type="checkbox" class="native-control" />
+          <div class="background">
+            <div class="knob"></div>
           </div>
         </div>
       </section>
@@ -83,79 +83,79 @@
       <section class="example">
         <h2>Switch on Light Theme</h2>
         <div class="demo-switch-wrapper">
-          <div class="mdc-switch">
-            <input type="checkbox" id="basic-switch" class="mdc-switch__native-control"/>
-            <div class="mdc-switch__background">
-              <div class="mdc-switch__knob"></div>
+          <div class="switch">
+            <input type="checkbox" id="basic-switch" class="native-control"/>
+            <div class="background">
+              <div class="knob"></div>
             </div>
           </div>
-          <label for="basic-switch" class="mdc-switch-label">off/on</label>
+          <label for="basic-switch" class="switch-label">off/on</label>
         </div>
         <div class="demo-switch-wrapper">
-          <div class="mdc-switch demo-switch--custom">
-            <input type="checkbox" id="basic-switch-custom" class="mdc-switch__native-control" checked/>
-            <div class="mdc-switch__background">
-              <div class="mdc-switch__knob"></div>
+          <div class="switch demo-switch--custom">
+            <input type="checkbox" id="basic-switch-custom" class="native-control" checked/>
+            <div class="background">
+              <div class="knob"></div>
             </div>
           </div>
-          <label for="basic-switch-custom" class="mdc-switch-label">custom color</label>
+          <label for="basic-switch-custom" class="switch-label">custom color</label>
         </div>
       </section>
       <section class="example">
         <h2>Switch on Light Theme - Disabled</h2>
         <div class="demo-switch-wrapper">
-          <div class="mdc-switch">
+          <div class="switch">
             <input type="checkbox"
                    id="basic-switch--disabled"
-                   class="mdc-switch__native-control"
+                   class="native-control"
                    disabled/>
-            <div class="mdc-switch__background">
-              <div class="mdc-switch__knob"></div>
+            <div class="background">
+              <div class="knob"></div>
             </div>
           </div>
-          <label for="basic-switch--disabled" class="mdc-switch-label">off/on</label>
+          <label for="basic-switch--disabled" class="switch-label">off/on</label>
         </div>
       </section>
 
-      <section class="example mdc-theme--dark">
+      <section class="example theme--dark">
         <h2>Switch on Dark Theme</h2>
         <div class="demo-switch-wrapper">
-          <div class="mdc-switch">
+          <div class="switch">
             <input type="checkbox"
                    id="basic-switch--dark"
-                   class="mdc-switch__native-control"/>
-            <div class="mdc-switch__background">
-              <div class="mdc-switch__knob"></div>
+                   class="native-control"/>
+            <div class="background">
+              <div class="knob"></div>
             </div>
           </div>
-          <label for="basic-switch--dark" class="mdc-switch-label">off/on</label>
+          <label for="basic-switch--dark" class="switch-label">off/on</label>
         </div>
         <div class="demo-switch-wrapper">
-          <div class="mdc-switch demo-switch--custom">
+          <div class="switch demo-switch--custom">
             <input type="checkbox"
                    id="basic-switch--dark-custom"
-                   class="mdc-switch__native-control"
+                   class="native-control"
                    checked />
-            <div class="mdc-switch__background">
-              <div class="mdc-switch__knob"></div>
+            <div class="background">
+              <div class="knob"></div>
             </div>
           </div>
-          <label for="basic-switch--dark-custom" class="mdc-switch-label">custom color</label>
+          <label for="basic-switch--dark-custom" class="switch-label">custom color</label>
         </div>
       </section>
 
-      <section class="example mdc-theme--dark">
+      <section class="example theme--dark">
         <h2>Switch on Dark Theme - Disabled</h2>
-        <div class="mdc-switch">
+        <div class="switch">
           <input type="checkbox"
                  id="basic-switch--dark--disabled"
-                 class="mdc-switch__native-control"
+                 class="native-control"
                  disabled />
-          <div class="mdc-switch__background">
-            <div class="mdc-switch__knob"></div>
+          <div class="background">
+            <div class="knob"></div>
           </div>
         </div>
-        <label for="basic-switch--dark--disabled" class="mdc-switch-label">off/on</label>
+        <label for="basic-switch--dark--disabled" class="switch-label">off/on</label>
       </section>
 
     </main>

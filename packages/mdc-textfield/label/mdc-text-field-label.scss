@@ -23,7 +23,7 @@
 @include mdc-text-field-invalid-label-shake_keyframes_(box, 50%);
 
 // postcss-bem-linter: define text-field-label
-.mdc-text-field__label {
+.text-field .label {
   position: absolute;
   bottom: 8px;
   left: 0;
@@ -33,26 +33,26 @@
   cursor: text;
 
   // stylelint-disable plugin/selector-bem-pattern
-  @include mdc-rtl(".mdc-text-field") {
+  @include mdc-rtl(".text-field") {
     right: 0;
     left: auto;
     transform-origin: right top;
   }
   // stylelint-enable plugin/selector-bem-pattern
 
-  @include mdc-theme-dark(".mdc-text-field") {
+  @include mdc-theme-dark(".text-field") {
     @include mdc-theme-prop(color, $mdc-text-field-dark-label);
   }
 
-  &--float-above {
+  &.float-above {
     transform: translateY(-100%) scale(.75, .75);
     cursor: auto;
   }
 }
 
 // stylelint-disable plugin/selector-bem-pattern
-.mdc-text-field__label--float-above {
-  &.mdc-text-field__label--shake {
+.text-field .label.float-above {
+  &.shake {
     animation: invalid-shake-float-above-standard 250ms 1;
   }
 }

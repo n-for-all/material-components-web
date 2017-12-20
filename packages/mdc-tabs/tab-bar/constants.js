@@ -15,11 +15,11 @@
  */
 
 export const cssClasses = {
-  UPGRADED: 'mdc-tab-bar-upgraded',
+  UPGRADED: 'upgraded',
 };
 
 export const strings = {
-  TAB_SELECTOR: '.mdc-tab',
-  INDICATOR_SELECTOR: '.mdc-tab-bar__indicator',
+  TAB_SELECTOR: '.tab',
+  INDICATOR_SELECTOR: '.indicator',
   CHANGE_EVENT: 'MDCTabBar:change',
 };

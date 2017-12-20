@@ -18,9 +18,9 @@
 @import "@material/theme/mixins";
 
 // postcss-bem-linter: define textfield
-.mdc-text-field {
+.text-field {
 
-  &__bottom-line {
+  .bottom-line {
     @include mdc-theme-prop(background-color, primary);
 
     position: absolute;
@@ -34,11 +34,11 @@
     z-index: 2;
   }
 
-  &__bottom-line--active {
+  .bottom-line.active {
     transform: scaleX(1);
   }
 
-  .mdc-text-field__input:focus ~ .mdc-text-field__bottom-line {
+  .input:focus ~ .bottom-line {
     opacity: 1;
   }
 }

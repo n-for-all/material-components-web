@@ -22,21 +22,21 @@
 //
 
 @mixin mdc-switch-track-color($color) {
-  .mdc-switch__native-control:enabled:checked ~ .mdc-switch__background::before {
+  .native-control:enabled:checked ~ .background::before {
     @include mdc-theme-prop(background-color, $color);
   }
 }
 
 @mixin mdc-switch-knob-color($color) {
   // stylelint-disable-next-line selector-max-specificity
-  .mdc-switch__native-control:enabled:checked ~ .mdc-switch__background .mdc-switch__knob {
+  .native-control:enabled:checked ~ .background .knob {
     @include mdc-theme-prop(background-color, $color);
   }
 }
 
 @mixin mdc-switch-focus-indicator-color($color) {
   // stylelint-disable-next-line selector-max-specificity
-  .mdc-switch__native-control:enabled:checked ~ .mdc-switch__background .mdc-switch__knob::before {
+  .native-control:enabled:checked ~ .background .knob::before {
     @include mdc-theme-prop(background-color, $color);
   }
 }
@@ -46,21 +46,21 @@
 //
 
 @mixin mdc-switch-unchecked-track-color_($color) {
-  .mdc-switch__native-control:enabled:not(:checked) ~ .mdc-switch__background::before {
+  .native-control:enabled:not(:checked) ~ .background::before {
     @include mdc-theme-prop(background-color, $color);
   }
 }
 
 @mixin mdc-switch-unchecked-knob-color_($color) {
   // stylelint-disable-next-line selector-max-specificity
-  .mdc-switch__native-control:enabled:not(:checked) ~ .mdc-switch__background .mdc-switch__knob {
+  .native-control:enabled:not(:checked) ~ .background .knob {
     @include mdc-theme-prop(background-color, $color);
   }
 }
 
 @mixin mdc-switch-unchecked-focus-indicator-color_($color) {
   // stylelint-disable-next-line selector-max-specificity
-  .mdc-switch__native-control:enabled:not(:checked) ~ .mdc-switch__background .mdc-switch__knob::before {
+  .native-control:enabled:not(:checked) ~ .background .knob::before {
     @include mdc-theme-prop(background-color, $color);
   }
 }

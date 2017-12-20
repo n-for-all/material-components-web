@@ -21,7 +21,7 @@
 @import "./variables";
 
 // postcss-bem-linter: define switch
-.mdc-switch {
+.switch {
   @include mdc-switch-unchecked-track-color_($mdc-switch-unchecked-track-color);
   @include mdc-switch-unchecked-knob-color_($mdc-switch-unchecked-knob-color);
   @include mdc-switch-unchecked-focus-indicator-color_($mdc-switch-unchecked-focus-ring-color);
@@ -39,7 +39,7 @@
   display: inline-block;
   position: relative;
 
-  &__native-control {
+  .native-control {
     @include mdc-switch-tap-target_;
 
     display: inline-block;
@@ -54,7 +54,7 @@
     }
   }
 
-  &__background {
+  .background {
     display: block;
     position: relative;
     width: $mdc-switch-track-width;
@@ -78,13 +78,13 @@
       opacity: .38;
       content: "";
 
-      @include mdc-theme-dark(".mdc-switch") {
+      @include mdc-theme-dark(".switch") {
         opacity: .3;
       }
     }
 
     // postcss-bem-linter: ignore
-    .mdc-switch__knob {
+    .knob {
       @include mdc-elevation(2);
 
       display: block;
@@ -117,8 +117,8 @@
   }
 }
 
-.mdc-switch__native-control:focus ~ .mdc-switch__background {
-  .mdc-switch__knob {
+.native-control:focus ~ .background {
+  .knob {
     // Focus indicator
     &::before {
       position: absolute;
@@ -130,20 +130,20 @@
         mdc-switch-transition(background-color);
       border-radius: $mdc-switch-focus-ring-diameter / 2;
 
-      @include mdc-theme-dark(".mdc-switch") {
+      @include mdc-theme-dark(".switch") {
         opacity: .14;
       }
     }
   }
 }
 
-.mdc-switch__native-control:checked ~ .mdc-switch__background {
+.native-control:checked ~ .background {
   // Track
   &::before {
     opacity: .5;
   }
 
-  .mdc-switch__knob {
+  .knob {
     transform: translateX($mdc-switch-knob-active-margin);
     transition:
       mdc-switch-transition(transform),
@@ -158,26 +158,26 @@
 
 // postcss-bem-linter: end
 
-.mdc-switch__native-control:disabled {
+.native-control:disabled {
   cursor: initial;
 }
 
-.mdc-switch__native-control:disabled ~ .mdc-switch__background {
+.native-control:disabled ~ .background {
   // Track
   &::before {
     background-color: $mdc-switch-unchecked-track-color;
     opacity: .12;
 
-    @include mdc-theme-dark(".mdc-switch") {
+    @include mdc-theme-dark(".switch") {
       background-color: $mdc-switch-unchecked-track-color-dark;
       opacity: .1;
     }
   }
 
-  .mdc-switch__knob {
+  .knob {
     background-color: $mdc-switch-disabled-knob-color;
 
-    @include mdc-theme-dark(".mdc-switch") {
+    @include mdc-theme-dark(".switch") {
       background-color: $mdc-switch-disabled-knob-color-dark;
     }
   }

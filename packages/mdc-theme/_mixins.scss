@@ -113,20 +113,20 @@
   @if ($root-selector) {
     @at-root {
       @if ($compound) {
-        #{$root-selector}--theme-dark#{&},
-        .mdc-theme--dark & {
+        #{$root-selector}.dark#{&},
+        .dark & {
           @content;
         }
       } @else {
-        #{$root-selector}--theme-dark &,
-        .mdc-theme--dark & {
+        #{$root-selector}.dark &,
+        .dark & {
           @content;
         }
       }
     }
   } @else {
     &--theme-dark,
-    .mdc-theme--dark & {
+    .dark & {
       @content;
     }
   }

@@ -126,7 +126,7 @@ export class MDCSlider extends MDCComponent {
         const frag = document.createDocumentFragment();
         for (let i = 0; i < numMarkers; i++) {
           const marker = document.createElement('div');
-          marker.classList.add('mdc-slider__track-marker');
+          marker.classList.add('track-marker');
           frag.appendChild(marker);
         }
         this.trackMarkerContainer_.appendChild(frag);

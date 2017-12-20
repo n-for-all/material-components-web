@@ -21,7 +21,7 @@
 $mdc-form-field-item-spacing: 4px;
 
 /* stylelint-disable selector-max-type */
-.mdc-form-field {
+.form-field {
   @include mdc-typography(body1);
   @include mdc-theme-prop(color, text-primary-on-light);
 
@@ -47,7 +47,7 @@ $mdc-form-field-item-spacing: 4px;
   }
 }
 
-.mdc-form-field--align-end {
+.form-field.align-end {
   > label {
     order: -1;
     margin-left: auto;

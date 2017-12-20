@@ -25,22 +25,22 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
-  <body class="mdc-typography">
-    <header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--waterfall demo-toolbar">
-      <div class="mdc-toolbar__row">
-        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-          <a href="#" class="material-icons mdc-toolbar__menu-icon">menu</a>
-          <span class="mdc-toolbar__title">Title</span>
+  <body class="typography">
+    <header class="toolbar fixed waterfall demo-toolbar">
+      <div class="row">
+        <section class="section align-start">
+          <a href="#" class="material-icons menu-icon">menu</a>
+          <span class="title">Title</span>
         </section>
-        <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
-          <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Download" alt="Download">file_download</a>
-          <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Print this page" alt="Print this page">print</a>
-          <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
+        <section class="section align-end" role="toolbar">
+          <a href="#" class="material-icons icon" aria-label="Download" alt="Download">file_download</a>
+          <a href="#" class="material-icons icon" aria-label="Print this page" alt="Print this page">print</a>
+          <a href="#" class="material-icons icon" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
         </section>
       </div>
     </header>
     <main>
-      <div class="mdc-toolbar-fixed-adjust">
+      <div class="toolbar-fixed-adjust">
         <p class="demo-paragraph">
           Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
         </p>
@@ -57,15 +57,15 @@
       (function() {
         var pollId = 0;
         pollId = setInterval(function() {
-          var pos = getComputedStyle(document.querySelector('.mdc-toolbar')).position;
+          var pos = getComputedStyle(document.querySelector('.toolbar')).position;
           if (pos === 'fixed' || pos === 'relative') {
             init();
             clearInterval(pollId);
           }
         }, 250);
         function init() {
-          var toolbar = mdc.toolbar.MDCToolbar.attachTo(document.querySelector('.mdc-toolbar'));
-          toolbar.fixedAdjustElement = document.querySelector('.mdc-toolbar-fixed-adjust');
+          var toolbar = mdc.toolbar.MDCToolbar.attachTo(document.querySelector('.toolbar'));
+          toolbar.fixedAdjustElement = document.querySelector('.toolbar-fixed-adjust');
         }
       })();
     </script>

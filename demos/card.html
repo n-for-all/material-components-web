@@ -19,8 +19,8 @@
     <meta charset="utf-8">
     <title>Card - Material Components Catalog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="/images/logo_components_color_2x_web_48dp.png">
-    <script src="/assets/card.css.js"></script>
+    <link rel="icon" type="image/png" href="images/logo_components_color_2x_web_48dp.png">
+    <script src="assets/card.css.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -46,11 +46,11 @@
         }
       }
 
-      .demo-card--with-avatar .mdc-card__primary {
+      .demo-card--with-avatar .primary {
         position: relative;
       }
 
-      .demo-card--with-avatar .demo-card__avatar {
+      .demo-card--with-avatar .demo-avatar {
         position: absolute;
         background: #bdbdbd;
         height: 2.5rem;
@@ -60,18 +60,18 @@
         border-radius: 50%;
       }
 
-      .demo-card--with-avatar .mdc-card__title,
-      .demo-card--with-avatar .mdc-card__subtitle {
+      .demo-card--with-avatar .title,
+      .demo-card--with-avatar .subtitle {
         margin-left: 56px;
       }
 
-      [dir="rtl"] .demo-card--with-avatar .mdc-card__title,
-      [dir="rtl"] .demo-card--with-avatar .mdc-card__subtitle {
+      [dir="rtl"] .demo-card--with-avatar .title,
+      [dir="rtl"] .demo-card--with-avatar .subtitle {
         margin-right: 56px;
         margin-left: initial;
       }
 
-      .demo-card__16-9-media {
+      .demo-16-9-media {
         background-image: url("images/16-9.jpg");
         background-size: cover;
         background-repeat: no-repeat;
@@ -79,7 +79,7 @@
         /* 197sp, for 16:9 ratio with 350sp demo card width */
       }
 
-      .demo-card--small .mdc-card__media {
+      .demo-card--small .media {
         background-image: url("images/1-1.jpg");
         background-size: cover;
         background-repeat: no-repeat;
@@ -95,8 +95,8 @@
         background-repeat: no-repeat;
       }
 
-      .demo-card--bg-demo .mdc-card__primary,
-      .demo-card--bg-demo .mdc-card__actions {
+      .demo-card--bg-demo .primary,
+      .demo-card--bg-demo .actions {
         background: rgba(0, 0, 0, .4);
       }
 
@@ -130,15 +130,15 @@
     <main>
       <div class="mdc-toolbar-fixed-adjust"></div>
       <section class="hero">
-        <div class="mdc-card demo-card">
-          <section class="mdc-card__media demo-card__16-9-media"></section>
-          <section class="mdc-card__primary">
-            <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-            <h2 class="mdc-card__subtitle">Subtitle here</h2>
+        <div class="card demo-card">
+          <section class="media demo-16-9-media"></section>
+          <section class="primary">
+            <h1 class="title large">Title goes here</h1>
+            <h2 class="subtitle">Subtitle here</h2>
           </section>
-          <section class="mdc-card__actions">
-            <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-            <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+          <section class="actions">
+            <button class="button compact action">Action 1</button>
+            <button class="button compact action">Action 2</button>
           </section>
         </div>
       </section>
@@ -160,158 +160,158 @@
 
       <section class="demo-typography--section" id="demo-wrapper">
         <div>
-          <div class="mdc-card demo-card">
-            <section class="mdc-card__media demo-card__16-9-media"></section>
-            <section class="mdc-card__supporting-text">
+          <div class="card demo-card">
+            <section class="media demo-16-9-media"></section>
+            <section class="supporting-text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
             </section>
           </div>
         </div>
 
         <div>
-          <div class="mdc-card demo-card demo-card--with-avatar">
-            <section class="mdc-card__primary">
-              <div class="demo-card__avatar"></div>
-              <h1 class="mdc-card__title">Title</h1>
-              <h2 class="mdc-card__subtitle">Subhead</h2>
+          <div class="card demo-card demo-card--with-avatar">
+            <section class="primary">
+              <div class="demo-avatar"></div>
+              <h1 class="title">Title</h1>
+              <h2 class="subtitle">Subhead</h2>
             </section>
-            <section class="mdc-card__media demo-card__16-9-media"></section>
-            <section class="mdc-card__supporting-text">
+            <section class="media demo-16-9-media"></section>
+            <section class="supporting-text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
             </section>
-            <section class="mdc-card__actions">
-              <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-              <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+            <section class="actions">
+              <button class="button compact action">Action 1</button>
+              <button class="button compact action">Action 2</button>
             </section>
           </div>
         </div>
 
         <div>
-          <div class="mdc-card demo-card demo-card--with-avatar">
-            <section class="mdc-card__primary">
-              <div class="demo-card__avatar"></div>
-              <h1 class="mdc-card__title">Title</h1>
-              <h2 class="mdc-card__subtitle">Subhead</h2>
+          <div class="card demo-card demo-card--with-avatar">
+            <section class="primary">
+              <div class="demo-avatar"></div>
+              <h1 class="title">Title</h1>
+              <h2 class="subtitle">Subhead</h2>
             </section>
-            <section class="mdc-card__media demo-card__16-9-media"></section>
-            <section class="mdc-card__actions mdc-card__actions--vertical">
-              <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-              <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
-            </section>
-          </div>
-        </div>
-
-        <div>
-          <div class="mdc-card demo-card">
-            <section class="mdc-card__media demo-card__16-9-media"></section>
-            <section class="mdc-card__primary">
-              <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-              <h2 class="mdc-card__subtitle">Subtitle here</h2>
-            </section>
-            <section class="mdc-card__actions">
-              <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-              <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+            <section class="media demo-16-9-media"></section>
+            <section class="actions vertical">
+              <button class="button compact action">Action 1</button>
+              <button class="button compact action">Action 2</button>
             </section>
           </div>
         </div>
 
         <div>
-          <div class="mdc-card demo-card">
-            <section class="mdc-card__primary">
-              <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-              <h2 class="mdc-card__subtitle">Subtitle here</h2>
+          <div class="card demo-card">
+            <section class="media demo-16-9-media"></section>
+            <section class="primary">
+              <h1 class="title large">Title goes here</h1>
+              <h2 class="subtitle">Subtitle here</h2>
             </section>
-            <section class="mdc-card__supporting-text">
+            <section class="actions">
+              <button class="button compact action">Action 1</button>
+              <button class="button compact action">Action 2</button>
+            </section>
+          </div>
+        </div>
+
+        <div>
+          <div class="card demo-card">
+            <section class="primary">
+              <h1 class="title large">Title goes here</h1>
+              <h2 class="subtitle">Subtitle here</h2>
+            </section>
+            <section class="supporting-text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </section>
-            <section class="mdc-card__actions">
-              <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-              <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+            <section class="actions">
+              <button class="button compact action">Action 1</button>
+              <button class="button compact action">Action 2</button>
             </section>
           </div>
         </div>
 
         <div>
-          <div class="mdc-card mdc-card--theme-dark demo-card demo-card--bg-demo">
-            <section class="mdc-card__primary">
-              <h1 class="mdc-card__title mdc-card__title--large">Title goes here</h1>
-              <h2 class="mdc-card__subtitle">Subtitle here</h2>
+          <div class="card card--theme-dark demo-card demo-card--bg-demo">
+            <section class="primary">
+              <h1 class="title large">Title goes here</h1>
+              <h2 class="subtitle">Subtitle here</h2>
             </section>
-            <section class="mdc-card__actions">
-              <button class="mdc-button mdc-button--compact mdc-button--theme-dark mdc-card__action">Action 1</button>
-              <button class="mdc-button mdc-button--compact mdc-button--theme-dark mdc-card__action">Action 2</button>
-            </section>
-          </div>
-        </div>
-
-        <div>
-          <div class="mdc-card demo-card demo-card--small">
-            <section class="mdc-card__media">
-              <h1 class="mdc-card__title mdc-card__title--large">Title</h1>
-            </section>
-            <section class="mdc-card__actions">
-              <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
+            <section class="actions">
+              <button class="button compact theme-dark action">Action 1</button>
+              <button class="button compact theme-dark action">Action 2</button>
             </section>
           </div>
         </div>
 
         <div>
-          <div class="mdc-card demo-card">
-            <div class="mdc-card__horizontal-block">
-              <section class="mdc-card__primary">
-                <h1 class="mdc-card__title mdc-card__title--large">Title here</h1>
-                <h2 class="mdc-card__subtitle">Subtitle here</h2>
+          <div class="card demo-card demo-card--small">
+            <section class="media">
+              <h1 class="title large">Title</h1>
+            </section>
+            <section class="actions">
+              <button class="button compact action">Action 1</button>
+            </section>
+          </div>
+        </div>
+
+        <div>
+          <div class="card demo-card">
+            <div class="horizontal-block">
+              <section class="primary">
+                <h1 class="title large">Title here</h1>
+                <h2 class="subtitle">Subtitle here</h2>
               </section>
-              <img class="mdc-card__media-item" src="images/1-1.jpg">
+              <img class="media-item" src="images/1-1.jpg">
             </div>
-            <section class="mdc-card__actions">
-              <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-              <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+            <section class="actions">
+              <button class="button compact action">Action 1</button>
+              <button class="button compact action">Action 2</button>
             </section>
           </div>
         </div>
 
         <div>
-          <div class="mdc-card demo-card">
-            <div class="mdc-card__horizontal-block">
-              <section class="mdc-card__primary">
-                <h1 class="mdc-card__title mdc-card__title--large">Title here</h1>
-                <h2 class="mdc-card__subtitle">Subtitle here</h2>
+          <div class="card demo-card">
+            <div class="horizontal-block">
+              <section class="primary">
+                <h1 class="title large">Title here</h1>
+                <h2 class="subtitle">Subtitle here</h2>
               </section>
-              <img class="mdc-card__media-item mdc-card__media-item--1dot5x" src="images/1-1.jpg">
+              <img class="media-item media-item--1dot5x" src="images/1-1.jpg">
             </div>
-            <section class="mdc-card__actions">
-              <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-              <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+            <section class="actions">
+              <button class="button compact action">Action 1</button>
+              <button class="button compact action">Action 2</button>
             </section>
           </div>
         </div>
 
         <div>
-          <div class="mdc-card demo-card">
-            <div class="mdc-card__horizontal-block">
-              <section class="mdc-card__primary">
-                <h1 class="mdc-card__title mdc-card__title--large">Title here</h1>
-                <h2 class="mdc-card__subtitle">Subtitle here</h2>
+          <div class="card demo-card">
+            <div class="horizontal-block">
+              <section class="primary">
+                <h1 class="title large">Title here</h1>
+                <h2 class="subtitle">Subtitle here</h2>
               </section>
-              <img class="mdc-card__media-item mdc-card__media-item--2x" src="images/1-1.jpg">
+              <img class="media-item media-item--2x" src="images/1-1.jpg">
             </div>
-            <section class="mdc-card__actions">
-              <button class="mdc-button mdc-button--compact mdc-card__action">Action 1</button>
-              <button class="mdc-button mdc-button--compact mdc-card__action">Action 2</button>
+            <section class="actions">
+              <button class="button compact action">Action 1</button>
+              <button class="button compact action">Action 2</button>
             </section>
           </div>
         </div>
 
         <div>
-          <div class="mdc-card demo-card">
-            <div class="mdc-card__horizontal-block">
-              <img class="mdc-card__media-item mdc-card__media-item--3x" src="images/1-1.jpg">
-              <section class="mdc-card__actions mdc-card__actions--vertical">
+          <div class="card demo-card">
+            <div class="horizontal-block">
+              <img class="media-item media-item--3x" src="images/1-1.jpg">
+              <section class="actions vertical">
                 <!-- TODO(sgomes): Replace with icon buttons when we have those. -->
-                <button class="mdc-button mdc-button--compact mdc-card__action">A1</button>
-                <button class="mdc-button mdc-button--compact mdc-card__action">A2</button>
+                <button class="button compact action">A1</button>
+                <button class="button compact action">A2</button>
               </section>
             </div>
           </div>

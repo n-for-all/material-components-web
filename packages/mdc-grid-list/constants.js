@@ -14,6 +14,6 @@
  * limitations under the License.
  */
 export const strings = {
-  TILES_SELECTOR: '.mdc-grid-list__tiles',
-  TILE_SELECTOR: '.mdc-grid-tile',
+  TILES_SELECTOR: '.grid-list .tiles',
+  TILE_SELECTOR: '.grid-tile',
 };

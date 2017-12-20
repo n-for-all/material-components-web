@@ -15,12 +15,12 @@
  */
 
 export const cssClasses = {
-  CLOSED_CLASS: 'mdc-linear-progress--closed',
-  INDETERMINATE_CLASS: 'mdc-linear-progress--indeterminate',
-  REVERSED_CLASS: 'mdc-linear-progress--reversed',
+  CLOSED_CLASS: 'closed',
+  INDETERMINATE_CLASS: 'indeterminate',
+  REVERSED_CLASS: 'reversed',
 };
 
 export const strings = {
-  PRIMARY_BAR_SELECTOR: '.mdc-linear-progress__primary-bar',
-  BUFFER_SELECTOR: '.mdc-linear-progress__buffer',
+  PRIMARY_BAR_SELECTOR: '.primary-bar',
+  BUFFER_SELECTOR: '.buffer',
 };

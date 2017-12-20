@@ -33,7 +33,7 @@
       .demo-content > button {
         margin-bottom: 6px;
       }
-      .mdc-theme--dark {
+      .dark {
         background-color: #303030;
       }
 
@@ -53,166 +53,166 @@
         justify-content: center;
       }
 
-      .mdc-theme--dark, .section-dark-theme {
+      .dark, .section-dark-theme {
         background: #262626;
         color: white;
       }
     </style>
   </head>
-  <body class="mdc-typography">
-    <header class="mdc-toolbar mdc-toolbar--fixed">
-      <div class="mdc-toolbar__row">
-        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+  <body class="typography">
+    <header class="toolbar fixed">
+      <div class="row">
+        <section class="section align-start">
           <span class="catalog-back">
-            <a href="/" class="mdc-toolbar__menu-icon"><i class="material-icons">&#xE5C4;</i></a>
+            <a href="/" class="menu-icon"><i class="material-icons">&#xE5C4;</i></a>
           </span>
-          <span class="mdc-toolbar__title catalog-title">Dialog</span>
+          <span class="title catalog-title">Dialog</span>
         </section>
       </div>
     </header>
     <main>
-      <div class="mdc-toolbar-fixed-adjust"></div>
+      <div class="toolbar-fixed-adjust"></div>
       <section class="hero">
-        <aside class="catalog-dialog-demo mdc-dialog mdc-dialog--open">
-          <div class="mdc-dialog__surface">
-            <header class="mdc-dialog__header">
-              <h2 id="mdc-dialog-default-label" class="mdc-dialog__header__title">
+        <aside class="catalog-dialog-demo dialog open">
+          <div class="surface">
+            <header class="header">
+              <h2 id="dialog-default-label" class="title">
                 Are you happy?
               </h2>
             </header>
-            <section id="mdc-dialog-default-description" class="mdc-dialog__body">
+            <section id="dialog-default-description" class="body">
               Please check the left and right side of this element for fun.
             </section>
-            <footer class="mdc-dialog__footer">
-              <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Cancel</button>
-              <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">Continue</button>
+            <footer class="footer">
+              <button type="button" class="button cancel">Cancel</button>
+              <button type="button" class="button accept">Continue</button>
             </footer>
           </div>
         </aside>
       </section>
 
       <div class="demo-body">
-        <aside id="mdc-dialog-default"
-               class="mdc-dialog"
+        <aside id="dialog-default"
+               class="dialog"
                role="alertdialog"
                aria-hidden="true"
-               aria-labelledby="mdc-dialog-default-label"
-               aria-describedby="mdc-dialog-default-description">
-          <div class="mdc-dialog__surface">
-            <header class="mdc-dialog__header">
-              <h2 id="mdc-dialog-default-label" class="mdc-dialog__header__title">
+               aria-labelledby="dialog-default-label"
+               aria-describedby="dialog-default-description">
+          <div class="surface">
+            <header class="header">
+              <h2 id="dialog-default-label" class="title">
                 Use Google's location service?
               </h2>
             </header>
-            <section id="mdc-dialog-default-description" class="mdc-dialog__body">
+            <section id="dialog-default-description" class="body">
               Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
             </section>
-            <footer class="mdc-dialog__footer">
-              <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Decline</button>
-              <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">Accept</button>
+            <footer class="footer">
+              <button type="button" class="button cancel">Decline</button>
+              <button type="button" class="button accept">Accept</button>
             </footer>
           </div>
-          <div class="mdc-dialog__backdrop"></div>
+          <div class="backdrop"></div>
         </aside>
 
-        <aside id="mdc-dialog-colored-footer-buttons"
-               class="mdc-dialog"
+        <aside id="dialog-colored-footer-buttons"
+               class="dialog"
                role="alertdialog"
                aria-hidden="true"
-               aria-labelledby="mdc-dialog-colored-footer-button-label"
-               aria-describedby="mdc-dialog-colored-footer-button-description">
-          <div class="mdc-dialog__surface">
-            <header class="mdc-dialog__header">
-              <h2 id="mdc-dialog-colored-footer-button-label" class="mdc-dialog__header__title">
+               aria-labelledby="dialog-colored-footer-button-label"
+               aria-describedby="dialog-colored-footer-button-description">
+          <div class="surface">
+            <header class="header">
+              <h2 id="dialog-colored-footer-button-label" class="title">
                 Use Google's location service?
               </h2>
             </header>
-            <section id="mdc-dialog-colored-footer-button-description" class="mdc-dialog__body">
+            <section id="dialog-colored-footer-button-description" class="body">
               Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
             </section>
-            <footer class="mdc-dialog__footer">
-              <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Decline</button>
-              <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept mdc-dialog__action">Accept</button>
+            <footer class="footer">
+              <button type="button" class="button cancel">Decline</button>
+              <button type="button" class="button accept action">Accept</button>
             </footer>
           </div>
-          <div class="mdc-dialog__backdrop"></div>
+          <div class="backdrop"></div>
         </aside>
 
-        <aside id="mdc-dialog-with-list"
-               class="mdc-dialog"
+        <aside id="dialog-with-list"
+               class="dialog"
                role="alertdialog"
                aria-hidden="true"
-               aria-labelledby="mdc-dialog-with-list-label"
-               aria-describedby="mdc-dialog-with-list-description">
-          <div class="mdc-dialog__surface">
-            <header class="mdc-dialog__header">
-              <h2 id="mdc-dialog-with-list-label" class="mdc-dialog__header__title">
+               aria-labelledby="dialog-with-list-label"
+               aria-describedby="dialog-with-list-description">
+          <div class="surface">
+            <header class="header">
+              <h2 id="dialog-with-list-label" class="title">
                 Choose a Ringtone
               </h2>
             </header>
-            <section id="mdc-dialog-with-list-description" class="mdc-dialog__body mdc-dialog__body--scrollable">
-              <ul class="mdc-list">
-                <li class="mdc-list-item">None</li>
-                <li class="mdc-list-item">Callisto</li>
-                <li class="mdc-list-item">Ganymede</li>
-                <li class="mdc-list-item">Luna</li>
-                <li class="mdc-list-item">Marimba</li>
-                <li class="mdc-list-item">Schwifty</li>
-                <li class="mdc-list-item">Callisto</li>
-                <li class="mdc-list-item">Ganymede</li>
-                <li class="mdc-list-item">Luna</li>
-                <li class="mdc-list-item">Marimba</li>
-                <li class="mdc-list-item">Schwifty</li>
+            <section id="dialog-with-list-description" class="body body--scrollable">
+              <ul class="list">
+                <li class="list-item">None</li>
+                <li class="list-item">Callisto</li>
+                <li class="list-item">Ganymede</li>
+                <li class="list-item">Luna</li>
+                <li class="list-item">Marimba</li>
+                <li class="list-item">Schwifty</li>
+                <li class="list-item">Callisto</li>
+                <li class="list-item">Ganymede</li>
+                <li class="list-item">Luna</li>
+                <li class="list-item">Marimba</li>
+                <li class="list-item">Schwifty</li>
               </ul>
             </section>
-            <footer class="mdc-dialog__footer">
-              <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Decline</button>
-              <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">Accept</button>
+            <footer class="footer">
+              <button type="button" class="button cancel">Decline</button>
+              <button type="button" class="button accept">Accept</button>
             </footer>
           </div>
-          <div class="mdc-dialog__backdrop"></div>
+          <div class="backdrop"></div>
         </aside>
       </div>
       <section class="example">
-        <button id="default-dialog-activation" class="mdc-button mdc-button--raised">Show Dialog</button>
-        <button id="colored-footer-button-dialog-activation" class="mdc-button mdc-button--raised">Show Colored Footer Button Dialog</button>
-        <button id="dialog-with-list-activation" class="mdc-button mdc-button--raised">Show Scrolling Dialog</button>
-        <div class="mdc-form-field">
-          <div class="mdc-checkbox">
+        <button id="default-dialog-activation" class="button raised">Show Dialog</button>
+        <button id="colored-footer-button-dialog-activation" class="button raised">Show Colored Footer Button Dialog</button>
+        <button id="dialog-with-list-activation" class="button raised">Show Scrolling Dialog</button>
+        <div class="form-field">
+          <div class="checkbox">
             <input type="checkbox"
                    id="toggle-rtl"
-                   class="mdc-checkbox__native-control"/>
-            <div class="mdc-checkbox__background">
-              <svg class="mdc-checkbox__checkmark"
+                   class="checkbox__native-control"/>
+            <div class="checkbox__background">
+              <svg class="checkbox__checkmark"
                   viewBox="0 0 24 24">
-                <path class="mdc-checkbox__checkmark__path"
+                <path class="checkbox__checkmark__path"
                       fill="none"
                       stroke="white"
                       d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
               </svg>
-              <div class="mdc-checkbox__mixedmark"></div>
+              <div class="checkbox__mixedmark"></div>
             </div>
           </div>
           <label for="toggle-rtl">Toggle RTL</label>
         </div>
       </section>
 
-      <section class="example mdc-theme--dark">
-        <h2>Dark Theme (mdc-theme--dark)</h2>
+      <section class="example dark">
+        <h2>Dark Theme (dark)</h2>
         <div class="dialog-container">
-          <aside class="catalog-dialog-demo mdc-dialog mdc-dialog--open">
-            <div class="mdc-dialog__surface">
-              <header class="mdc-dialog__header">
-                <h2 id="mdc-dialog-default-label" class="mdc-dialog__header__title">
+          <aside class="catalog-dialog-demo dialog open">
+            <div class="surface">
+              <header class="header">
+                <h2 id="dialog-default-label" class="title">
                   Are you happy?
                 </h2>
               </header>
-              <section id="mdc-dialog-default-description" class="mdc-dialog__body">
+              <section id="dialog-default-description" class="body">
                 Please check the left and right side of this element for fun.
               </section>
-              <footer class="mdc-dialog__footer">
-                <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Cancel</button>
-                <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">Continue</button>
+              <footer class="footer">
+                <button type="button" class="button cancel">Cancel</button>
+                <button type="button" class="button accept">Continue</button>
               </footer>
             </div>
           </aside>
@@ -220,21 +220,21 @@
       </section>
 
       <section class="example section-dark-theme">
-        <h2>Dark Theme (mdc-dialog--theme-dark)</h2>
+        <h2>Dark Theme (theme-dark)</h2>
         <div class="dialog-container">
-          <aside class="catalog-dialog-demo mdc-dialog mdc-dialog--theme-dark mdc-dialog--open">
-            <div class="mdc-dialog__surface">
-              <header class="mdc-dialog__header">
-                <h2 id="mdc-dialog-default-label" class="mdc-dialog__header__title">
+          <aside class="catalog-dialog-demo dialog theme-dark open">
+            <div class="surface">
+              <header class="header">
+                <h2 id="dialog-default-label" class="title">
                   Are you happy?
                 </h2>
               </header>
-              <section id="mdc-dialog-default-description" class="mdc-dialog__body">
+              <section id="dialog-default-description" class="body">
                 Please check the left and right side of this element for fun.
               </section>
-              <footer class="mdc-dialog__footer">
-                <button type="button" class="mdc-button mdc-button--theme-dark mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Cancel</button>
-                <button type="button" class="mdc-button mdc-button--theme-dark mdc-dialog__footer__button mdc-dialog__footer__button--accept">Continue</button>
+              <footer class="footer">
+                <button type="button" class="button theme-dark cancel">Cancel</button>
+                <button type="button" class="button theme-dark accept">Continue</button>
               </footer>
             </div>
           </aside>
@@ -244,7 +244,7 @@
     <script src="/assets/material-components-web.js"></script>
     <script>
       (function() {
-        var dialog = new mdc.dialog.MDCDialog(document.querySelector('#mdc-dialog-default'));
+        var dialog = new mdc.dialog.MDCDialog(document.querySelector('#dialog-default'));
         dialog.listen('MDCDialog:accept', function() {
           console.log('accepted');
         });
@@ -255,12 +255,12 @@
           dialog.lastFocusedTarget = evt.target;
           dialog.show();
         });
-        var dialogScrollable = new mdc.dialog.MDCDialog(document.querySelector('#mdc-dialog-with-list'));
+        var dialogScrollable = new mdc.dialog.MDCDialog(document.querySelector('#dialog-with-list'));
         document.querySelector('#dialog-with-list-activation').addEventListener('click', function (evt) {
           dialogScrollable.lastFocusedTarget = evt.target;
           dialogScrollable.show();
         });
-        var dialogColoredButton = new mdc.dialog.MDCDialog(document.querySelector('#mdc-dialog-colored-footer-buttons'));
+        var dialogColoredButton = new mdc.dialog.MDCDialog(document.querySelector('#dialog-colored-footer-buttons'));
         document.querySelector('#colored-footer-button-dialog-activation').addEventListener('click', function (evt) {
           dialogColoredButton.lastFocusedTarget = evt.target;
           dialogColoredButton.show();
@@ -269,7 +269,7 @@
     </script>
     <script>
       (function() {
-        mdc.dialog.MDCDialog.attachTo(document.querySelector('.mdc-dialog'));
+        mdc.dialog.MDCDialog.attachTo(document.querySelector('.dialog'));
         var demoWrapper = document.querySelector('.demo-body');
         var hero = document.querySelector('.hero');
         document.getElementById('toggle-rtl').addEventListener('change', function() {

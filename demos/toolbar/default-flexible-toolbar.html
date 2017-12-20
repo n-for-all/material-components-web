@@ -27,17 +27,17 @@
     <style>
     </style>
   </head>
-  <body class="mdc-typography">
-    <header class="mdc-toolbar mdc-toolbar--flexible mdc-toolbar--flexible-default-behavior demo-toolbar">
-      <div class="mdc-toolbar__row demo-toolbar__row--with-image">
-        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-          <a href="#" class="material-icons mdc-toolbar__menu-icon">menu</a>
-          <span class="mdc-toolbar__title">Title</span>
+  <body class="typography">
+    <header class="toolbar flexible flexible-default-behavior demo-toolbar">
+      <div class="row demo-row--with-image">
+        <section class="section align-start">
+          <a href="#" class="material-icons menu-icon">menu</a>
+          <span class="title">Title</span>
         </section>
-        <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
-          <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Download" alt="Download">file_download</a>
-          <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Print this page" alt="Print this page">print</a>
-          <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
+        <section class="section align-end" role="toolbar">
+          <a href="#" class="material-icons icon" aria-label="Download" alt="Download">file_download</a>
+          <a href="#" class="material-icons icon" aria-label="Print this page" alt="Print this page">print</a>
+          <a href="#" class="material-icons icon" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
         </section>
       </div>
     </header>
@@ -60,7 +60,7 @@
       (function() {
         var pollId = 0;
         pollId = setInterval(function() {
-          var pos = getComputedStyle(document.querySelector('.mdc-toolbar')).position;
+          var pos = getComputedStyle(document.querySelector('.toolbar')).position;
           if (pos === 'fixed' || pos === 'relative') {
             init();
             clearInterval(pollId);
@@ -68,7 +68,7 @@
         }, 250);
         function init() {
           var ratioSpan = document.querySelector("#ratio");
-          var toolbar = mdc.toolbar.MDCToolbar.attachTo(document.querySelector('.mdc-toolbar'));
+          var toolbar = mdc.toolbar.MDCToolbar.attachTo(document.querySelector('.toolbar'));
           toolbar.listen('MDCToolbar:change', function(evt) {
             var flexibleExpansionRatio = evt.detail.flexibleExpansionRatio;
             ratioSpan.innerHTML = flexibleExpansionRatio.toFixed(2);
