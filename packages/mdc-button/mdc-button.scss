@@ -29,9 +29,6 @@
     &.raised,
     &.unelevated {
         @include mdc-button--filled_;
-        @include mdc-button-container-fill-color(primary);
-        @include mdc-button-ink-color(text-primary-on-primary);
-        @include mdc-states(text-primary-on-primary);
     }
 
     &.raised {
@@ -40,10 +37,21 @@
 
     &.stroked {
         @include mdc-button--stroked_;
-        @include mdc-button-stroke-width(2px);
+        @include mdc-button-stroke-width(1px);
         @include mdc-button-stroke-color(primary);
     }
 
+    &.button--primary {
+        @include mdc-button-container-fill-color(primary);
+        @include mdc-button-ink-color(text-primary-on-primary);
+        @include mdc-states(text-primary-on-primary);
+    }
+
+    &.button--secondary {
+        @include mdc-button-container-fill-color(secondary);
+        @include mdc-button-ink-color(text-secondary-on-primary);
+        @include mdc-states(text-secondary-on-primary);
+    }
     &.compact {
         @include mdc-button--compact_;
     }

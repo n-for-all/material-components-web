@@ -56,7 +56,7 @@
         box-sizing: border-box;
         width: $mdc-radio-ui-pct;
         height: $mdc-radio-ui-pct;
-
+        top: ($mdc-radio-touch-area - $mdc-radio-ui-size + 4) / 2;
         &::before {
             position: absolute;
             top: 0;
@@ -166,6 +166,15 @@
             transition: mdc-radio-enter(opacity), mdc-radio-enter(transform);
             opacity: 0.26;
         }
+    }
+    .label {
+        padding-left: 30px;
+        margin-bottom: 0;
+        font-weight: normal;
+        cursor: pointer;
+        display: inline-block;
+        line-height: 1em;
+        font-size: 1.1em;
     }
 }
 // postcss-bem-linter: end

@@ -31,7 +31,6 @@ $mdc-tab-with-icon-and-text-height: 72px;
     display: table-cell;
     position: relative;
     box-sizing: border-box;
-    min-width: 160px;
     min-height: $mdc-tab-with-text-height;
     padding: 0 24px;
     text-align: center;
@@ -95,15 +94,15 @@ $mdc-tab-with-icon-and-text-height: 72px;
         }
     }
     // stylelint-disable plugin/selector-bem-pattern
-    .tab-bar:not(.tab-bar-upgraded) & {
+    .tab-bar:not(.upgraded) & {
         position: relative;
 
         &::after {
             display: none;
             position: absolute;
             top: $mdc-tab-with-text-height - 2px;
-            left: 0;
-            width: calc(100% - 4px);
+            left: 0px;
+            width: 100%;
             height: 2px;
             content: "";
             pointer-events: none;

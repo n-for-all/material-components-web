@@ -18,10 +18,10 @@
 @import "@material/theme/mixins";
 
 // postcss-bem-linter: define text-field-helper-text
-.text-field +.text-field-helper-text{
+.text-field +.helper-text{
   margin-bottom: 8px;
 }
-.text-field-helper-text {
+.helper-text {
   @include mdc-theme-prop(color, text-hint-on-light);
 
   margin: 0;
@@ -40,7 +40,7 @@
   // stylelint-enable plugin/selector-bem-pattern
 }
 
-.text-field-helper-text.persistent {
+.helper-text.persistent {
   transition: none;
   opacity: 1;
   will-change: initial;

@@ -259,7 +259,6 @@
         position: relative;
         align-items: flex-end;
         box-sizing: border-box;
-        margin-top: 16px;
 
         &:not(.textarea) {
             height: 48px;
@@ -309,7 +308,7 @@
             }
         }
         // stylelint-disable plugin/selector-bem-pattern
-        + .text-field-helper-text,
+        + .helper-text,
         .input,
         .label {
             @include mdc-theme-prop(color, text-disabled-on-light);
@@ -323,7 +322,7 @@
         }
         @include mdc-theme-dark(".text-field", true) {
             // stylelint-disable plugin/selector-bem-pattern
-            + .text-field-helper-text {
+            + .helper-text {
                 @include mdc-theme-prop(color, text-disabled-on-dark);
             }
             // stylelint-enable plugin/selector-bem-pattern
@@ -515,8 +514,8 @@
         }
     }
     // postcss-bem-linter: end
-    // postcss-bem-linter: define text-field-helper-text
-    .text-field-helper-text {
+    // postcss-bem-linter: define helper-text
+    .helper-text {
         // stylelint-disable plugin/selector-bem-pattern
         &.dense + & {
             margin-bottom: 4px;
@@ -534,12 +533,12 @@
     }
     // postcss-bem-linter: end
     &.invalid {
-        + .text-field-helper-text.validation-msg {
+        + .helper-text.validation-msg {
             opacity: 1;
             color: $mdc-text-field-error-on-light;
         }
         @include mdc-theme-dark(".text-field", true) {
-            + .text-field-helper-text.validation-msg {
+            + .helper-text.validation-msg {
                 color: $mdc-text-field-error-on-dark;
             }
         }

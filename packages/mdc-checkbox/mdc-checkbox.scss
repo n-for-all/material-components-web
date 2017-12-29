@@ -15,8 +15,8 @@
     @at-root {
         @include mdc-checkbox-ink-color($mdc-checkbox-mark-color);
         @include mdc-checkbox-focus-indicator-color($mdc-checkbox-baseline-theme-color);
-        @include mdc-checkbox-container-colors;
     }
+    @include mdc-checkbox-container-colors;
     // Needed to disable hover effects on CSS-only (non-JS) checkboxes
     .disabled {
         @include mdc-checkbox--disabled_;
@@ -95,5 +95,15 @@
 
     .native-control:indeterminate ~ .background .mixedmark {
         @include mdc-checkbox__mixedmark--indeterminate_;
+    }
+
+    .label {
+        padding-left: 30px;
+        margin-bottom: 0;
+        font-weight: normal;
+        cursor: pointer;
+        display: inline-block;
+        line-height: 1em;
+        font-size: 1.1em;
     }
 }

@@ -74,9 +74,9 @@
       <div class="toolbar-fixed-adjust"></div>
       <section class="hero">
         <div class="text-field">
-          <input type="text" class="input" id="my-text-field" aria-controls="my-text-field-helper-text">
+          <input type="text" class="input" id="my-text-field" aria-controls="my-helper-text">
           <label for="my-text-field" class="label">Text Field</label>
-          <div class="bottom-line"></div>
+
         </div>
       </section>
 
@@ -90,11 +90,11 @@
         <h2>Full Functionality JS Component (Floating Label, Validation)</h2>
         <section id="demo-text-field-wrapper">
           <div class="text-field">
-            <input type="text" class="input" id="my-text-field" aria-controls="my-text-field-helper-text">
+            <input type="text" class="input" id="my-text-field" aria-controls="my-helper-text">
             <label for="my-text-field" class="label">Email Address</label>
-            <div class="bottom-line"></div>
+
           </div>
-          <p id="my-text-field-helper-text" class="text-field-helper-text"
+          <p id="my-helper-text" class="helper-text"
              aria-hidden="true" style="display:none;">
             Helper Text (possibly validation message)
           </p>
@@ -141,9 +141,9 @@
                  aria-controls="pw-validation-msg"
                  autocomplete="current-password">
           <label for="pw" class="label">Choose password</label>
-          <div class="bottom-line"></div>
+
         </div>
-        <p class="text-field-helper-text persistent validation-msg"
+        <p class="helper-text persistent validation-msg"
            id="pw-validation-msg">
           Must be at least 8 characters long
         </p>
@@ -155,9 +155,9 @@
             <input required pattern=".{8,}" type="text" id="tf-box" class="input"
                    aria-controls="name-validation-message">
             <label for="tf-box" class="label">Your Name</label>
-            <div class="bottom-line"></div>
+
           </div>
-          <p class="text-field-helper-text validation-msg"
+          <p class="helper-text validation-msg"
              id="name-validation-msg">
             Must be at least 8 characters
           </p>
@@ -234,7 +234,7 @@
             <i class="material-icons icon" tabindex="0">event</i>
             <input type="text" id="tf-box-leading" class="input custom-text-field-input">
             <label for="tf-box-leading" class="label">Your name</label>
-            <div class="bottom-line"></div>
+
           </div>
         </div>
         <div id="demo-tf-box-trailing-wrapper">
@@ -243,7 +243,7 @@
             <input type="text" id="tf-box-trailing" class="input custom-text-field-input">
             <label for="tf-box-trailing" class="label">Your other name</label>
             <i class="material-icons icon" tabindex="0">delete</i>
-            <div class="bottom-line"></div>
+
           </div>
         </div>
         <div>
@@ -274,7 +274,7 @@
           <div class="text-field" data-demo-no-auto-js>
             <input type="text" class="input" id="css-only-text-field"
                    placeholder="Name">
-            <div class="bottom-line"></div>
+
           </div>
           <label for="css-only-text-field">Your name:</label>
         </div>
@@ -296,7 +296,7 @@
           <label for="fouc" class="label float-above">
             Label floating above
           </label>
-          <div class="bottom-line"></div>
+
         </div>
       </section>
 
@@ -340,7 +340,7 @@
         <div id="demo-fullwidth-wrapper">
           <div class="text-field fullwidth">
             <input class="input" type="text" placeholder="Subject" aria-label="Subject">
-            <div class="bottom-line"></div>
+
           </div>
           <div class="text-field textarea fullwidth full-width-textarea-example">
             <textarea id="full-width-textarea" class="input" rows="8"></textarea>
@@ -425,7 +425,7 @@
       (function() {
         var section = document.getElementById('demo-text-field-wrapper');
         var tfRoot = section.querySelector('.text-field');
-        var helperText = section.querySelector('.text-field-helper-text');
+        var helperText = section.querySelector('.helper-text');
         var tf = new mdc.textField.MDCTextField(tfRoot);
 
         document.getElementById('disable').addEventListener('change', function(evt) {
